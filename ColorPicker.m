@@ -34,10 +34,10 @@
 	greenSlider.maximumValue = 1.0f;
 	alphaSlider.maximumValue = 1.0f;
 	
-	redSlider.value = 0;
-	blueSlider.value = 255;
-	greenSlider.value = 0;
-	alphaSlider.value = 0.35f;
+	redSlider.value = 0.0f;
+	blueSlider.value = 1.0f;
+	greenSlider.value = 0.0f;
+	alphaSlider.value = 1.0f;
 		
 	return self;
 }
@@ -52,8 +52,8 @@
 	
 	CGPoint myApplicationCenter = self.view.center;
 	redSlider.center = CGPointMake(myApplicationCenter.x, 75);
-	blueSlider.center = CGPointMake(myApplicationCenter.x, 175);
-	greenSlider.center = CGPointMake(myApplicationCenter.x, 275);
+	blueSlider.center = CGPointMake(myApplicationCenter.x, 275);
+	greenSlider.center = CGPointMake(myApplicationCenter.x, 175);
 	alphaSlider.center = CGPointMake(myApplicationCenter.x, 375);
 	
 	[redSlider addTarget:self action:@selector(updateBackground) 
