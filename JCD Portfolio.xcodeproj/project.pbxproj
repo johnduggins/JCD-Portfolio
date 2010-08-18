@@ -24,6 +24,7 @@
 		9982926C121800FB007F87EC /* Three.png in Resources */ = {isa = PBXBuildFile; fileRef = 99829266121800FB007F87EC /* Three.png */; };
 		9982926D121800FB007F87EC /* Two.png in Resources */ = {isa = PBXBuildFile; fileRef = 99829267121800FB007F87EC /* Two.png */; };
 		998292A212180E28007F87EC /* ColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 998292A112180E28007F87EC /* ColorPicker.m */; };
+		998BD7C8121B6EF40013E7EC /* GPS.m in Sources */ = {isa = PBXBuildFile; fileRef = 998BD7C7121B6EF40013E7EC /* GPS.m */; };
 		99F672981217822C0005091E /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 99F6728D1217822C0005091E /* Default-Landscape.png */; };
 		99F672991217822C0005091E /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 99F6728E1217822C0005091E /* Default-Portrait.png */; };
 		99F6729A1217822C0005091E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 99F6728F1217822C0005091E /* Default.png */; };
@@ -63,6 +64,8 @@
 		99829267121800FB007F87EC /* Two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Two.png; sourceTree = "<group>"; };
 		998292A012180E28007F87EC /* ColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPicker.h; sourceTree = "<group>"; };
 		998292A112180E28007F87EC /* ColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPicker.m; sourceTree = "<group>"; };
+		998BD7C6121B6EF40013E7EC /* GPS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPS.h; sourceTree = "<group>"; };
+		998BD7C7121B6EF40013E7EC /* GPS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPS.m; sourceTree = "<group>"; };
 		99F6728D1217822C0005091E /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
 		99F6728E1217822C0005091E /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
 		99F6728F1217822C0005091E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -127,6 +130,8 @@
 				99F672971217822C0005091E /* iTunesArtwork */,
 				28EEC0491118E28000187D67 /* AppDelegate_Shared.h */,
 				28EEC04A1118E28000187D67 /* AppDelegate_Shared.m */,
+				998BD7C6121B6EF40013E7EC /* GPS.h */,
+				998BD7C7121B6EF40013E7EC /* GPS.m */,
 				99829194121796D8007F87EC /* PrimaryViewController.h */,
 				99829195121796D8007F87EC /* PrimaryViewController.m */,
 				998292A012180E28007F87EC /* ColorPicker.h */,
@@ -276,6 +281,7 @@
 				2860E38A111B897F00E27156 /* AppDelegate_iPhone.m in Sources */,
 				99829196121796D8007F87EC /* PrimaryViewController.m in Sources */,
 				998292A212180E28007F87EC /* ColorPicker.m in Sources */,
+				998BD7C8121B6EF40013E7EC /* GPS.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
