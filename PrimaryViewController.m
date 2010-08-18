@@ -26,7 +26,7 @@
 - (void)loadView {
 	self.view = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
 	self.view.backgroundColor = UIColor.blueColor;
-	self.view.alpha = 0.35f;
+	//self.view.alpha = 0.35f;
 	/*self.view.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin+UIViewAutoresizingFlexibleRightMargin+UIViewAutoresizingFlexibleTopMargin+UIViewAutoresizingFlexibleBottomMargin+UIViewAutoresizingFlexibleWidth+UIViewAutoresizingFlexibleHeight;*/
     self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth+UIViewAutoresizingFlexibleHeight;
 }
