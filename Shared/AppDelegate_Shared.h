@@ -10,6 +10,7 @@
 #import <CoreData/CoreData.h>
 #import "PrimaryViewController.h"
 #import "ColorPicker.h"
+#import "GPS.h"
 
 @interface AppDelegate_Shared : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
     

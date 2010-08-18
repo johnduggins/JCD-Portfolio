@@ -20,14 +20,23 @@
 	NSString *path = [[NSBundle mainBundle] pathForResource:myFirstViewController.title ofType:@"png"];
 	[myFirstViewController.tabBarItem initWithTitle:myFirstViewController.title
 											  image:[[UIImage alloc] initWithContentsOfFile:path] tag:0];
+    
+    GPS *mySecondViewController = [[GPS alloc] init];
+    mySecondViewController.title = @"Two";
+    path = [[NSBundle mainBundle] pathForResource:mySecondViewController.title ofType:@"png"];
+    [mySecondViewController.tabBarItem initWithTitle:mySecondViewController.title 
+                                               image:[[UIImage alloc] initWithContentsOfFile:path] tag:0];
 	
-	PrimaryViewController *mySecondViewController = [[PrimaryViewController alloc] init];
-	mySecondViewController.title = @"Two";
-	path = [[NSBundle mainBundle] pathForResource:mySecondViewController.title ofType:@"png"];
-	[mySecondViewController.tabBarItem initWithTitle:mySecondViewController.title
+	PrimaryViewController *myThirdViewController = [[PrimaryViewController alloc] init];
+	myThirdViewController.title = @"Three";
+	path = [[NSBundle mainBundle] pathForResource:myThirdViewController.title ofType:@"png"];
+	[myThirdViewController.tabBarItem initWithTitle:myThirdViewController.title
 											   image:[[UIImage alloc] initWithContentsOfFile:path] tag:0];
 	
-	NSArray *tbarArray = [NSArray arrayWithObjects:myFirstViewController, mySecondViewController, nil];
+	NSArray *tbarArray = [NSArray arrayWithObjects:myFirstViewController, mySecondViewController, myThirdViewController, nil];
+    
+    [myFirstViewController release];
+    [myThirdViewController release];
 	
 	UITabBarController *tbarController = [[UITabBarController alloc] init];
 	tbarController.viewControllers = tbarArray;
