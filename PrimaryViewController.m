@@ -39,6 +39,16 @@
 }
 */
 
+- (BOOL) isVersion4 {
+	NSString* ver = [[UIDevice currentDevice] systemVersion];
+	float version = 4.0;
+	
+	if ([ver length]>=3) version = [[ver substringToIndex:3] floatValue];
+	
+	return (version >= 4.0 && version < 5.0);
+}
+
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Overriden to allow any orientation.

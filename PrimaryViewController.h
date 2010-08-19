@@ -13,4 +13,6 @@
 
 }
 
+-(BOOL)isVersion4;
+
 @end
