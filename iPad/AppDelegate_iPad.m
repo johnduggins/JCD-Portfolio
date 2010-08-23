@@ -26,10 +26,12 @@
 											  image:[[UIImage alloc] initWithContentsOfFile:path] tag:0];
     
     GPS_iPad *mySecondViewController = [[GPS_iPad alloc] init];
-    mySecondViewController.title = @"Two";
-    path = [[NSBundle mainBundle] pathForResource:mySecondViewController.title ofType:@"png"];
-    [mySecondViewController.tabBarItem initWithTitle:mySecondViewController.title 
-                                               image:[[UIImage alloc] initWithContentsOfFile:path] tag:0];
+	mySecondViewController.title = @"Two";
+	UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mySecondViewController];
+	nav.navigationBar.barStyle = UIBarStyleBlack;
+    nav.title = @"Two";
+    path = [[NSBundle mainBundle] pathForResource:nav.title ofType:@"png"];
+    [nav.tabBarItem initWithTitle:nav.title image:[[UIImage alloc] initWithContentsOfFile:path] tag:0];
 	
 	PrimaryViewController *myThirdViewController = [[PrimaryViewController alloc] init];
 	myThirdViewController.title = @"Three";
@@ -37,11 +39,12 @@
 	[myThirdViewController.tabBarItem initWithTitle:myThirdViewController.title
 											  image:[[UIImage alloc] initWithContentsOfFile:path] tag:0];
 	
-	NSArray *tbarArray = [NSArray arrayWithObjects:myFirstViewController, mySecondViewController, myThirdViewController, nil];
+	NSArray *tbarArray = [NSArray arrayWithObjects:myFirstViewController, nav, myThirdViewController, nil];
     
     [myFirstViewController release];
 	[mySecondViewController release];
     [myThirdViewController release];
+	[nav release];
 	
 	UITabBarController *tbarController = [[UITabBarController alloc] init];
 	tbarController.viewControllers = tbarArray;

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+#define BARBUTTON(TITLE, SELECTOR) [[[UIBarButtonItem alloc] initWithTitle:TITLE style:UIBarButtonItemStylePlain target:self action:SELECTOR] autorelease];
 
 @interface PrimaryViewController : UIViewController {
 

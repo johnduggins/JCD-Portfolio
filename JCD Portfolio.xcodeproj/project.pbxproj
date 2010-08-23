@@ -16,6 +16,8 @@
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28EEBFDD1118E19E00187D67 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EEBFDC1118E19E00187D67 /* CoreData.framework */; };
 		28EEC04B1118E28000187D67 /* AppDelegate_Shared.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EEC04A1118E28000187D67 /* AppDelegate_Shared.m */; };
+		99141C301222139200A2FF61 /* GPSTestMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99141C2F1222139200A2FF61 /* GPSTestMapViewController.m */; };
+		99141C3D122213AE00A2FF61 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99141C3C122213AE00A2FF61 /* MapKit.framework */; };
 		991563C7121CB55700872180 /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 991563C6121CB55700872180 /* MapAnnotation.m */; };
 		99829196121796D8007F87EC /* PrimaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99829195121796D8007F87EC /* PrimaryViewController.m */; };
 		99829268121800FB007F87EC /* Five.png in Resources */ = {isa = PBXBuildFile; fileRef = 99829262121800FB007F87EC /* Five.png */; };
@@ -58,6 +60,9 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* JCD_Portfolio_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCD_Portfolio_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* JCD_Portfolio-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JCD_Portfolio-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		99141C2E1222139200A2FF61 /* GPSTestMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSTestMapViewController.h; sourceTree = "<group>"; };
+		99141C2F1222139200A2FF61 /* GPSTestMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSTestMapViewController.m; sourceTree = "<group>"; };
+		99141C3C122213AE00A2FF61 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		991563C5121CB55700872180 /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
 		991563C6121CB55700872180 /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
 		99829194121796D8007F87EC /* PrimaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimaryViewController.h; sourceTree = "<group>"; };
@@ -100,6 +105,7 @@
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				28EEBFDD1118E19E00187D67 /* CoreData.framework in Frameworks */,
 				99DCF1631221F31900BE4700 /* CoreLocation.framework in Frameworks */,
+				99141C3D122213AE00A2FF61 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +152,8 @@
 				28EEC04A1118E28000187D67 /* AppDelegate_Shared.m */,
 				991563C5121CB55700872180 /* MapAnnotation.h */,
 				991563C6121CB55700872180 /* MapAnnotation.m */,
+				99141C2E1222139200A2FF61 /* GPSTestMapViewController.h */,
+				99141C2F1222139200A2FF61 /* GPSTestMapViewController.m */,
 				99829194121796D8007F87EC /* PrimaryViewController.h */,
 				99829195121796D8007F87EC /* PrimaryViewController.m */,
 				998292A012180E28007F87EC /* ColorPicker.h */,
@@ -197,6 +205,7 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				28EEBFDC1118E19E00187D67 /* CoreData.framework */,
 				99DCF1621221F31900BE4700 /* CoreLocation.framework */,
+				99141C3C122213AE00A2FF61 /* MapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -304,6 +313,7 @@
 				991563C7121CB55700872180 /* MapAnnotation.m in Sources */,
 				999575251221FD1F002F54B0 /* GPS_iPhone.m in Sources */,
 				9995752A1221FD2B002F54B0 /* GPS_iPad.m in Sources */,
+				99141C301222139200A2FF61 /* GPSTestMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

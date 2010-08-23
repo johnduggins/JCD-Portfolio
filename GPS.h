@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 #import "PrimaryViewController.h"
+#import "GPSTestMapViewController.h"
 
 
 @interface GPS : PrimaryViewController <CLLocationManagerDelegate> {
@@ -61,5 +62,6 @@
 -(void)createButtonsAndLabels;
 -(void)moveUIElementsPortrait;
 -(void)moveUIElementsLandscape;
+-(void)layoutButtonsAndLabels;
 
 @end

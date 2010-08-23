@@ -35,7 +35,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	//self.navigationItem.rightBarButtonItem = BARBUTTON(@"Map", @selector(displayMap));
+	self.navigationItem.rightBarButtonItem = BARBUTTON(@"Map", @selector(displayMap));
 }
 
 - (void) loadView {
@@ -104,10 +104,10 @@
 	}
 	
 	self.locManager.delegate = self;
-	/*if (![self isVersion4])
+	if (![self isVersion4])
 		self.locManager.desiredAccuracy = kCLLocationAccuracyBest;
 	else 
-		self.locManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation;*/
+		self.locManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation;
 	
 	//self.locManager.headingFilter = kCLHeadingFilterNone;
 	self.locManager.headingFilter = 1.0f; //in degress
@@ -123,7 +123,6 @@
 }
 
 -(void) createButtonsAndLabels {
-	NSLog(@"about to create buttons and labels");
 	self.startGPSButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 	self.stopGPSButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 	self.latitudeLabel = [[[UILabel alloc] init] autorelease];
@@ -158,6 +157,9 @@
 	self.headingLabel.textAlignment = UITextAlignmentCenter;
 	self.speedLabel.textAlignment = UITextAlignmentCenter;
 	
+	[self layoutButtonsAndLabels];
+	[self moveUIElementsPortrait];
+	
 	if (([CLLocationManager respondsToSelector:@selector(headingAvailable)]) &&
 		(![CLLocationManager headingAvailable]))
 		headingLabel.text = @"No Compass";
@@ -173,17 +175,18 @@
 	NSLog(@"Buttons and Labels created");
 }
 
--(void) moveUIElementsPortrait {
+-(void) layoutButtonsAndLabels {
 	self.latitudeLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
 	self.longitudeLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
 	self.headingLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
-	self.speedLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
-	
-	startGPSButton.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
-	stopGPSButton.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
-	
-	startGPSButton.center = CGPointMake(80.0f, 60.0f);
-	stopGPSButton.center = CGPointMake(240.0f, 60.0f);
+	self.speedLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);	
+	self.startGPSButton.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
+	self.stopGPSButton.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);	
+}
+
+-(void) moveUIElementsPortrait {	
+	self.startGPSButton.center = CGPointMake(80.0f, 60.0f);
+	self.stopGPSButton.center = CGPointMake(240.0f, 60.0f);
 	
 	self.longitudeLabel.center = CGPointMake(80.0f, 120.0f);
 	self.latitudeLabel.center = CGPointMake(240.0f, 120.0f);
@@ -193,16 +196,8 @@
 }
 
 -(void) moveUIElementsLandscape {
-	startGPSButton.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
-	stopGPSButton.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
-	
-	self.latitudeLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
-	self.longitudeLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
-	self.headingLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
-	self.speedLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
-	
-	startGPSButton.center = CGPointMake(160.0f, 60.0f);
-	stopGPSButton.center = CGPointMake(320.0f, 60.0f);
+	self.startGPSButton.center = CGPointMake(160.0f, 60.0f);
+	self.stopGPSButton.center = CGPointMake(320.0f, 60.0f);
 	
 	self.longitudeLabel.center = CGPointMake(160.0f, 120.0f);
 	self.latitudeLabel.center = CGPointMake(320.0f, 120.0f);
@@ -210,209 +205,6 @@
 	self.speedLabel.center = CGPointMake(160.0f, 180.0f);
 	self.headingLabel.center = CGPointMake(320.0f, 180.0f);	
 }
-
-/*- (UIView *) loadPortraitView {
-	
-	UIView *tempView = [super loadPortraitView];
-	
-	if (startGPSButton.tag == 0 || stopGPSButton.tag == 0) {
-		NSLog(@"Making new buttons");
-		startGPSButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-		stopGPSButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-		
-		startGPSButton.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
-		startGPSButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
-		[startGPSButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-		[startGPSButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
-		[startGPSButton setTitle:@"Reset GPS" forState: UIControlStateNormal];
-		startGPSButton.titleLabel.font = [UIFont boldSystemFontOfSize:18.0f];
-		
-		stopGPSButton.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
-		stopGPSButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
-		[stopGPSButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-		[stopGPSButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
-		[stopGPSButton setTitle:@"Pause GPS" forState: UIControlStateNormal];
-		stopGPSButton.titleLabel.font = [UIFont boldSystemFontOfSize:18.0f];
-		
-		startGPSButton.tag = GPSSTARTBUTTON;
-		stopGPSButton.tag = GPSSTOPBUTTON;
-		
-		[startGPSButton addTarget:self action:@selector(startGPS) forControlEvents: UIControlEventTouchUpInside];
-		[stopGPSButton addTarget:self action:@selector(stopGPS) forControlEvents: UIControlEventTouchUpInside];
-		
-	}
-	
-	if (self.latitudeLabel == nil || self.longitudeLabel == nil || self.headingLabel == nil || self.speedLabel == nil) {
-		
-		self.latitudeLabel = [[[UILabel alloc] init] autorelease];
-		self.longitudeLabel = [[[UILabel alloc] init] autorelease];
-		self.headingLabel = [[[UILabel alloc] init] autorelease];
-		self.speedLabel = [[[UILabel alloc] init] autorelease];
-		
-		
-		
-		self.latitudeLabel.textAlignment = UITextAlignmentCenter;
-		self.longitudeLabel.textAlignment = UITextAlignmentCenter;
-		self.headingLabel.textAlignment = UITextAlignmentCenter;
-		self.speedLabel.textAlignment = UITextAlignmentCenter;
-		
-	}
-	
-	//Class CLLMTester = [CLLocationManager class];
-	if (([CLLocationManager respondsToSelector:@selector(headingAvailable)]) &&
-		(![CLLocationManager headingAvailable]))
-		headingLabel.text = @"No Compass";
-	else if (!locManager.headingAvailable) headingLabel.text = @"No Compass";
-	
-	//NSArray *labelArray = [self makeOutputLabels];
-	//NSArray *buttonArray = [self makeControlButtons];
-	
-	
-	if ((([CLLocationManager respondsToSelector:@selector(headingAvailable)]) &&
-		 ([CLLocationManager headingAvailable])) || (locManager.headingAvailable)) {
-		if ([UIDevice currentDevice].orientation == UIInterfaceOrientationPortrait)
-			self.locManager.headingOrientation = CLDeviceOrientationPortrait;
-		else if ([UIDevice currentDevice].orientation == UIInterfaceOrientationPortraitUpsideDown)
-			self.locManager.headingOrientation = CLDeviceOrientationPortraitUpsideDown;
-		else NSLog(@"Unknown orientation for heading adjustment: %d", self.interfaceOrientation);
-	}
-	
-	[self.view addSubview:self.longitudeLabel];
-	[self.view addSubview:self.latitudeLabel];
-	[self.view addSubview:self.headingLabel];
-	[self.view addSubview:self.speedLabel];
-	[self.view addSubview:startGPSButton];
-	[self.view addSubview:stopGPSButton];
-	
-	[UIView beginAnimations:@"moveButtons" context:nil];
-	[UIView setAnimationDuration:0.3];
-	
-	self.latitudeLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
-	self.longitudeLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
-	self.headingLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
-	self.speedLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
-	
-	startGPSButton.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
-	stopGPSButton.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
-	
-	startGPSButton.center = CGPointMake(80.0f, 60.0f);
-	stopGPSButton.center = CGPointMake(240.0f, 60.0f);
-	
-	self.longitudeLabel.center = CGPointMake(80.0f, 120.0f);
-	self.latitudeLabel.center = CGPointMake(240.0f, 120.0f);
-	
-	self.speedLabel.center = CGPointMake(80.0f, 180.0f);
-	self.headingLabel.center = CGPointMake(240.0f, 180.0f);
-	
-	[UIView commitAnimations];
-	
-	return tempView;
-}*/
-
-/*- (UIView *) loadLandscapeView {
-	
-	UIView *tempView = [super loadLandscapeView];
-	
-	if (startGPSButton.tag == 0 || stopGPSButton.tag == 0) {
-		NSLog(@"Making new buttons");
-		startGPSButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-		stopGPSButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-		
-		startGPSButton.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
-		startGPSButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
-		[startGPSButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-		[startGPSButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
-		[startGPSButton setTitle:@"Reset GPS" forState: UIControlStateNormal];
-		startGPSButton.titleLabel.font = [UIFont boldSystemFontOfSize:18.0f];
-		
-		stopGPSButton.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
-		stopGPSButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
-		[stopGPSButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-		[stopGPSButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
-		[stopGPSButton setTitle:@"Pause GPS" forState: UIControlStateNormal];
-		stopGPSButton.titleLabel.font = [UIFont boldSystemFontOfSize:18.0f];
-		
-		startGPSButton.tag = GPSSTARTBUTTON;
-		stopGPSButton.tag = GPSSTOPBUTTON;
-		
-		[startGPSButton addTarget:self action:@selector(startGPS) forControlEvents: UIControlEventTouchUpInside];
-		[stopGPSButton addTarget:self action:@selector(stopGPS) forControlEvents: UIControlEventTouchUpInside];
-		
-	}
-	
-	//NSLog(@"tags are %d and %d",startGPSButton.tag, stopGPSButton.tag);
-	
-	if (self.latitudeLabel == nil || self.longitudeLabel == nil || self.headingLabel == nil || self.speedLabel == nil) {
-		
-		self.latitudeLabel = [[[UILabel alloc] init] autorelease];
-		self.longitudeLabel = [[[UILabel alloc] init] autorelease];
-		self.headingLabel = [[[UILabel alloc] init] autorelease];
-		self.speedLabel = [[[UILabel alloc] init] autorelease];
-		
-		
-		
-		self.latitudeLabel.textAlignment = UITextAlignmentCenter;
-		self.longitudeLabel.textAlignment = UITextAlignmentCenter;
-		self.headingLabel.textAlignment = UITextAlignmentCenter;
-		self.speedLabel.textAlignment = UITextAlignmentCenter;
-	}
-	
-	//Class CLLMTester = [CLLocationManager class];
-	if (([CLLocationManager respondsToSelector:@selector(headingAvailable)]) &&
-		(![CLLocationManager headingAvailable]))
-		headingLabel.text = @"No Compass";
-	else if (!locManager.headingAvailable) headingLabel.text = @"No Compass";
-	
-	//[self makeOutputLabels];
-	//[self makeControlButtons];
-	
-	if ((([CLLocationManager respondsToSelector:@selector(headingAvailable)]) &&
-		 ([CLLocationManager headingAvailable])) || (locManager.headingAvailable)) {
-		if ([UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeLeft)
-			self.locManager.headingOrientation = CLDeviceOrientationLandscapeRight;
-		else if ([UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeRight)
-			self.locManager.headingOrientation = CLDeviceOrientationLandscapeLeft;
-		else NSLog(@"Unknown orientation for heading adjustment: %d", self.interfaceOrientation);
-	}
-	
-	[self.view addSubview:self.longitudeLabel];
-	[self.view addSubview:self.latitudeLabel];
-	[self.view addSubview:self.headingLabel];
-	[self.view addSubview:self.speedLabel];
-	[self.view addSubview:startGPSButton];
-	[self.view addSubview:stopGPSButton];
-	
-	[UIView beginAnimations:@"moveButtons" context:nil];
-	[UIView setAnimationDuration:0.3];
-	
-	startGPSButton.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
-	stopGPSButton.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
-	
-	self.latitudeLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
-	self.longitudeLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
-	self.headingLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
-	self.speedLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
-	
-	startGPSButton.center = CGPointMake(160.0f, 60.0f);
-	stopGPSButton.center = CGPointMake(320.0f, 60.0f);
-	
-	self.longitudeLabel.center = CGPointMake(160.0f, 120.0f);
-	self.latitudeLabel.center = CGPointMake(320.0f, 120.0f);
-	
-	self.speedLabel.center = CGPointMake(160.0f, 180.0f);
-	self.headingLabel.center = CGPointMake(320.0f, 180.0f);
-	
-	[UIView commitAnimations];
-	
-	
-	
-	return tempView;
-}*/
-
-/*- (void) viewWillAppear:(BOOL)animated {
-	UIButton *startGPSButton = (UIButton *)[self.view.window viewWithTag:GPSSTARTBUTTON];
-	UIButton *stopGPSButton = (UIButton *)[self.view.window viewWithTag:GPSSTOPBUTTON];
-}*/
 
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
 	//UIButton *startGPSButton = (UIButton *)[self.view.window viewWithTag:GPSSTARTBUTTON];
@@ -463,19 +255,19 @@
 	if (self.accuracyCounter >= 3) {
 		self.accuracyCounter = 0;
 		self.bestAccuracy = 1000000;
-		latitudeLabel.text = [NSString stringWithFormat:@"%1.6f", self.lastLatitude];
-		longitudeLabel.text = [NSString stringWithFormat:@"%1.6f", self.lastLongitude];
+		self.latitudeLabel.text = [NSString stringWithFormat:@"%1.6f", self.lastLatitude];
+		self.longitudeLabel.text = [NSString stringWithFormat:@"%1.6f", self.lastLongitude];
 		if (((([CLLocationManager respondsToSelector:@selector(headingAvailable)]) &&
 			  (![CLLocationManager headingAvailable])) || !(locManager.headingAvailable)) && self.lastCourse >= 0)
-			headingLabel.text = [NSString stringWithFormat:@"%1.0fC deg",self.lastHeading = self.lastCourse];
-		if (self.lastSpeed >= 0.0f) speedLabel.text = [NSString stringWithFormat:@"%1.2f mph",2.23693629 * self.lastSpeed];
+			self.headingLabel.text = [NSString stringWithFormat:@"%1.0fC deg",self.lastHeading = self.lastCourse];
+		if (self.lastSpeed >= 0.0f) self.speedLabel.text = [NSString stringWithFormat:@"%1.2f mph",2.23693629 * self.lastSpeed];
 	}
 	
 	//} else NSLog(@"Logging that the newlocation pulled in isn't registering");
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading {
-	if ([self.lastTimeStamp timeIntervalSinceNow] > 5 || (self.lastSpeed < 1 && -[newHeading.timestamp timeIntervalSinceNow] <= 5.0)){
+	if ([lastTimeStamp timeIntervalSinceNow] > 5 || (lastSpeed < 1 && -[newHeading.timestamp timeIntervalSinceNow] <= 5.0)){
 		float adjustment = 0.0f;
 		float adjustedHeading = 0.0f;
 		//if ([UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeLeft) adjustment = 10.0f;
@@ -485,27 +277,27 @@
 			if (adjustedHeading < 0.0f) adjustedHeading +=360.0f;
 			else if (adjustedHeading >= 360.0f) adjustedHeading -= 360.0f;
 			self.lastHeading = newHeading.trueHeading;
-			headingLabel.text = [NSString stringWithFormat:@"%1.0fT deg", adjustedHeading];
+			self.headingLabel.text = [NSString stringWithFormat:@"%1.0fT deg", adjustedHeading];
 		}
 		else {
 			adjustedHeading = newHeading.magneticHeading + adjustment;
 			if (adjustedHeading < 0.0f) adjustedHeading +=360.0f;
 			else if (adjustedHeading >= 360.0f) adjustedHeading -= 360.0f;
 			self.lastHeading = newHeading.magneticHeading;
-			headingLabel.text = [NSString stringWithFormat:@"%1.0fM deg", adjustedHeading];
+			self.headingLabel.text = [NSString stringWithFormat:@"%1.0fM deg", adjustedHeading];
 		}
-	} else if (self.lastCourse >= 0.0f) {
+	} else if (lastCourse >= 0.0f) {
 		headingLabel.text = [NSString stringWithFormat:@"%1.0fC deg",self.lastHeading = self.lastCourse];
 	} else headingLabel.text = @"No Heading";
     
 }
 
-/*- (void) displayMap {
+- (void) displayMap {
 	
 	GPSTestMapViewController *gtmvc = [[[GPSTestMapViewController alloc] initWithLocation:self.lastLocation andSpan:0.005f] autorelease];
 	[self.navigationController pushViewController:gtmvc animated:YES];
 	
-}*/
+}
 
 - (BOOL)locationManagerShouldDisplayHeadingCalibration:(CLLocationManager *)manager {
 	return YES;	
@@ -521,6 +313,9 @@
 
 -(void) viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
+	if (self.startGPSButton == nil || self.latitudeLabel == nil) {
+		[self createButtonsAndLabels];	
+	}
     [self startGPS];
 }
 
