@@ -26,7 +26,9 @@
 		9982926D121800FB007F87EC /* Two.png in Resources */ = {isa = PBXBuildFile; fileRef = 99829267121800FB007F87EC /* Two.png */; };
 		998292A212180E28007F87EC /* ColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 998292A112180E28007F87EC /* ColorPicker.m */; };
 		998BD7C8121B6EF40013E7EC /* GPS.m in Sources */ = {isa = PBXBuildFile; fileRef = 998BD7C7121B6EF40013E7EC /* GPS.m */; };
-		99DEF347121DE5CD004B7C7D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DEF346121DE5CD004B7C7D /* CoreLocation.framework */; };
+		999575251221FD1F002F54B0 /* GPS_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 999575241221FD1F002F54B0 /* GPS_iPhone.m */; };
+		9995752A1221FD2B002F54B0 /* GPS_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 999575291221FD2B002F54B0 /* GPS_iPad.m */; };
+		99DCF1631221F31900BE4700 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DCF1621221F31900BE4700 /* CoreLocation.framework */; };
 		99F672981217822C0005091E /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 99F6728D1217822C0005091E /* Default-Landscape.png */; };
 		99F672991217822C0005091E /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 99F6728E1217822C0005091E /* Default-Portrait.png */; };
 		99F6729A1217822C0005091E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 99F6728F1217822C0005091E /* Default.png */; };
@@ -70,7 +72,11 @@
 		998292A112180E28007F87EC /* ColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPicker.m; sourceTree = "<group>"; };
 		998BD7C6121B6EF40013E7EC /* GPS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPS.h; sourceTree = "<group>"; };
 		998BD7C7121B6EF40013E7EC /* GPS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPS.m; sourceTree = "<group>"; };
-		99DEF346121DE5CD004B7C7D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		999575231221FD1F002F54B0 /* GPS_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPS_iPhone.h; sourceTree = "<group>"; };
+		999575241221FD1F002F54B0 /* GPS_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPS_iPhone.m; sourceTree = "<group>"; };
+		999575281221FD2B002F54B0 /* GPS_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPS_iPad.h; sourceTree = "<group>"; };
+		999575291221FD2B002F54B0 /* GPS_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPS_iPad.m; sourceTree = "<group>"; };
+		99DCF1621221F31900BE4700 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		99F6728D1217822C0005091E /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
 		99F6728E1217822C0005091E /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
 		99F6728F1217822C0005091E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -93,7 +99,7 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				28EEBFDD1118E19E00187D67 /* CoreData.framework in Frameworks */,
-				99DEF347121DE5CD004B7C7D /* CoreLocation.framework in Frameworks */,
+				99DCF1631221F31900BE4700 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +119,8 @@
 			children = (
 				2860E387111B897F00E27156 /* AppDelegate_iPhone.h */,
 				2860E388111B897F00E27156 /* AppDelegate_iPhone.m */,
+				999575231221FD1F002F54B0 /* GPS_iPhone.h */,
+				999575241221FD1F002F54B0 /* GPS_iPhone.m */,
 			);
 			path = iPhone;
 			sourceTree = "<group>";
@@ -136,14 +144,14 @@
 				99F672971217822C0005091E /* iTunesArtwork */,
 				28EEC0491118E28000187D67 /* AppDelegate_Shared.h */,
 				28EEC04A1118E28000187D67 /* AppDelegate_Shared.m */,
-				998BD7C6121B6EF40013E7EC /* GPS.h */,
-				998BD7C7121B6EF40013E7EC /* GPS.m */,
 				991563C5121CB55700872180 /* MapAnnotation.h */,
 				991563C6121CB55700872180 /* MapAnnotation.m */,
 				99829194121796D8007F87EC /* PrimaryViewController.h */,
 				99829195121796D8007F87EC /* PrimaryViewController.m */,
 				998292A012180E28007F87EC /* ColorPicker.h */,
 				998292A112180E28007F87EC /* ColorPicker.m */,
+				998BD7C6121B6EF40013E7EC /* GPS.h */,
+				998BD7C7121B6EF40013E7EC /* GPS.m */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -175,6 +183,8 @@
 			children = (
 				1D3623240D0F684500981E51 /* AppDelegate_iPad.h */,
 				1D3623250D0F684500981E51 /* AppDelegate_iPad.m */,
+				999575281221FD2B002F54B0 /* GPS_iPad.h */,
+				999575291221FD2B002F54B0 /* GPS_iPad.m */,
 			);
 			name = iPad;
 			sourceTree = "<group>";
@@ -186,7 +196,7 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				28EEBFDC1118E19E00187D67 /* CoreData.framework */,
-				99DEF346121DE5CD004B7C7D /* CoreLocation.framework */,
+				99DCF1621221F31900BE4700 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -234,6 +244,7 @@
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "JCD Portfolio" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -291,6 +302,8 @@
 				998292A212180E28007F87EC /* ColorPicker.m in Sources */,
 				998BD7C8121B6EF40013E7EC /* GPS.m in Sources */,
 				991563C7121CB55700872180 /* MapAnnotation.m in Sources */,
+				999575251221FD1F002F54B0 /* GPS_iPhone.m in Sources */,
+				9995752A1221FD2B002F54B0 /* GPS_iPad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,17 +348,18 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
 				CODE_SIGN_IDENTITY = "iPhone Developer: John Duggins (939F694R86)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: John Duggins (939F694R86)";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				PREBINDING = NO;
 				PROVISIONING_PROFILE = "E2234DFD-BE2F-42C7-BBC4-AA72E28C71DD";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E2234DFD-BE2F-42C7-BBC4-AA72E28C71DD";
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -353,18 +367,19 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
 				CODE_SIGN_IDENTITY = "iPhone Developer: John Duggins (939F694R86)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: John Duggins (939F694R86)";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
 				PROVISIONING_PROFILE = "E2234DFD-BE2F-42C7-BBC4-AA72E28C71DD";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E2234DFD-BE2F-42C7-BBC4-AA72E28C71DD";
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

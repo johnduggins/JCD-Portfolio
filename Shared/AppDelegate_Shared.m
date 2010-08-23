@@ -13,7 +13,7 @@
 
 @synthesize window;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+/*- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	
 	ColorPicker *myFirstViewController = [[ColorPicker alloc] init];
 	myFirstViewController.title = @"One";
@@ -36,6 +36,7 @@
 	NSArray *tbarArray = [NSArray arrayWithObjects:myFirstViewController, mySecondViewController, myThirdViewController, nil];
     
     [myFirstViewController release];
+	[mySecondViewController release];
     [myThirdViewController release];
 	
 	UITabBarController *tbarController = [[UITabBarController alloc] init];
@@ -46,12 +47,12 @@
 	if (tabNumber) tbarController.selectedIndex = [tabNumber intValue];
 	
 	window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-	window.backgroundColor = UIColor.whiteColor;
+	//window.backgroundColor = UIColor.whiteColor;
 	
 	[window addSubview:tbarController.view];
 	[window makeKeyAndVisible];
     return YES;
-}
+}*/
 
 - (void) tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL) changed {
 	NSMutableArray *titles = [NSMutableArray array];

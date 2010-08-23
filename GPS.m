@@ -8,8 +8,8 @@
 
 #import "GPS.h"
 
-#define GPSSTARTBUTTON 13001
-#define GPSSTOPBUTTON 13002
+//#define GPSSTARTBUTTON 13001
+//#define GPSSTOPBUTTON 13002
 
 @implementation GPS  
 
@@ -54,6 +54,7 @@
     } else {
 		NSLog(@"No idea how I got here");
 	}
+	
 }
 
 - (void) startGPS {
@@ -90,11 +91,12 @@
 -(id) init {
 	//self = [super initWithName:myName andPictureName:myPicture andAlpha:myAlpha];
     self = [super init];
+	//NSLog(@"init the GPS object");
+	
+	//NSLog(@"This version is %@", [[UIDevice currentDevice] systemVersion]);
 	
 	self.locManager = [[[CLLocationManager alloc] init] autorelease];
 	self.locManager.purpose = @"Generic GPS information gathering/display";
-	//if (!self.locManager.locationServicesEnabled) {
-	//if (![CLLocationManager locationServicesEnabled]) {
 	if ((([CLLocationManager respondsToSelector:@selector(locationServicesEnabled)]) &&
 		 (![CLLocationManager locationServicesEnabled])) || !(locManager.locationServicesEnabled)) {
 		NSLog(@"user has opted out of location services");
@@ -102,17 +104,111 @@
 	}
 	
 	self.locManager.delegate = self;
-	if ([self isVersion4]) self.locManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation;
-	else self.locManager.desiredAccuracy = kCLLocationAccuracyBest;
-	//self.locManager.distanceFilter = 5.0f; // in meters
-	self.locManager.headingFilter = 1.0f; //in degress
-	self.locManager.distanceFilter = kCLDistanceFilterNone;
+	/*if (![self isVersion4])
+		self.locManager.desiredAccuracy = kCLLocationAccuracyBest;
+	else 
+		self.locManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation;*/
+	
 	//self.locManager.headingFilter = kCLHeadingFilterNone;
+	self.locManager.headingFilter = 1.0f; //in degress
+	//self.locManager.distanceFilter = 5.0f; // in meters
+	self.locManager.distanceFilter = kCLDistanceFilterNone;
+	
+	[self createButtonsAndLabels];
 	
 	self.accuracyCounter = 0;
 	self.bestAccuracy = 1000000;
 	
 	return self;
+}
+
+-(void) createButtonsAndLabels {
+	NSLog(@"about to create buttons and labels");
+	self.startGPSButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+	self.stopGPSButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+	self.latitudeLabel = [[[UILabel alloc] init] autorelease];
+	self.longitudeLabel = [[[UILabel alloc] init] autorelease];
+	self.headingLabel = [[[UILabel alloc] init] autorelease];
+	self.speedLabel = [[[UILabel alloc] init] autorelease];
+	
+	self.startGPSButton.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+	self.startGPSButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
+	[self.startGPSButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+	[self.startGPSButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
+	[self.startGPSButton setTitle:@"Reset GPS" forState: UIControlStateNormal];
+	self.startGPSButton.titleLabel.font = [UIFont boldSystemFontOfSize:18.0f];
+	
+	self.stopGPSButton.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+	self.stopGPSButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
+	[self.stopGPSButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+	[self.stopGPSButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
+	[self.stopGPSButton setTitle:@"Pause GPS" forState: UIControlStateNormal];
+	self.stopGPSButton.titleLabel.font = [UIFont boldSystemFontOfSize:18.0f];
+	
+	//startGPSButton.tag = GPSSTARTBUTTON;
+	//stopGPSButton.tag = GPSSTOPBUTTON;
+	
+	[self moveUIElementsPortrait];
+	
+	[self.startGPSButton addTarget:self action:@selector(startGPS) forControlEvents: UIControlEventTouchUpInside];
+	[self.stopGPSButton addTarget:self action:@selector(stopGPS) forControlEvents: UIControlEventTouchUpInside];
+	
+	self.latitudeLabel.textAlignment = UITextAlignmentCenter;
+	self.longitudeLabel.textAlignment = UITextAlignmentCenter;
+	self.headingLabel.textAlignment = UITextAlignmentCenter;
+	self.speedLabel.textAlignment = UITextAlignmentCenter;
+	
+	if (([CLLocationManager respondsToSelector:@selector(headingAvailable)]) &&
+		(![CLLocationManager headingAvailable]))
+		headingLabel.text = @"No Compass";
+	else if (!locManager.headingAvailable) headingLabel.text = @"No Compass";
+	
+	[self.view addSubview:self.longitudeLabel];
+	[self.view addSubview:self.latitudeLabel];
+	[self.view addSubview:self.headingLabel];
+	[self.view addSubview:self.speedLabel];
+	[self.view addSubview:self.startGPSButton];
+	[self.view addSubview:self.stopGPSButton];
+	
+	NSLog(@"Buttons and Labels created");
+}
+
+-(void) moveUIElementsPortrait {
+	self.latitudeLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
+	self.longitudeLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
+	self.headingLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
+	self.speedLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
+	
+	startGPSButton.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
+	stopGPSButton.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
+	
+	startGPSButton.center = CGPointMake(80.0f, 60.0f);
+	stopGPSButton.center = CGPointMake(240.0f, 60.0f);
+	
+	self.longitudeLabel.center = CGPointMake(80.0f, 120.0f);
+	self.latitudeLabel.center = CGPointMake(240.0f, 120.0f);
+	
+	self.speedLabel.center = CGPointMake(80.0f, 180.0f);
+	self.headingLabel.center = CGPointMake(240.0f, 180.0f);	
+}
+
+-(void) moveUIElementsLandscape {
+	startGPSButton.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
+	stopGPSButton.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
+	
+	self.latitudeLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
+	self.longitudeLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
+	self.headingLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
+	self.speedLabel.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);
+	
+	startGPSButton.center = CGPointMake(160.0f, 60.0f);
+	stopGPSButton.center = CGPointMake(320.0f, 60.0f);
+	
+	self.longitudeLabel.center = CGPointMake(160.0f, 120.0f);
+	self.latitudeLabel.center = CGPointMake(320.0f, 120.0f);
+	
+	self.speedLabel.center = CGPointMake(160.0f, 180.0f);
+	self.headingLabel.center = CGPointMake(320.0f, 180.0f);	
 }
 
 /*- (UIView *) loadPortraitView {
@@ -313,28 +409,35 @@
 	return tempView;
 }*/
 
-- (void) viewWillAppear:(BOOL)animated {
+/*- (void) viewWillAppear:(BOOL)animated {
 	UIButton *startGPSButton = (UIButton *)[self.view.window viewWithTag:GPSSTARTBUTTON];
 	UIButton *stopGPSButton = (UIButton *)[self.view.window viewWithTag:GPSSTOPBUTTON];
-}
+}*/
 
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
-	UIButton *startGPSButton = (UIButton *)[self.view.window viewWithTag:GPSSTARTBUTTON];
-	UIButton *stopGPSButton = (UIButton *)[self.view.window viewWithTag:GPSSTOPBUTTON];
+	//UIButton *startGPSButton = (UIButton *)[self.view.window viewWithTag:GPSSTARTBUTTON];
+	//UIButton *stopGPSButton = (UIButton *)[self.view.window viewWithTag:GPSSTOPBUTTON];
+	
+	[UIView beginAnimations:@"moveButtons" context:nil];
+	[UIView setAnimationDuration:0.3];
 	
 	if ([UIDevice currentDevice].orientation == UIInterfaceOrientationPortrait 
 		|| [UIDevice currentDevice].orientation == UIInterfaceOrientationPortraitUpsideDown) {
 		//|| self.interfaceOrientation == UIInterfaceOrientationPortrait 
 		//|| self.interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
         NSLog(@"in portrait mode");
+		[self moveUIElementsPortrait];
     } else if ([UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeLeft
 			   || [UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeRight) {
 			   //|| self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft
 			   //|| self.interfaceOrientation == UIInterfaceOrientationLandscapeRight) {
         NSLog(@"in landscape mode");
+		[self moveUIElementsLandscape];
     } else {
 		NSLog(@"No idea how I got here");
 	}
+	
+	[UIView commitAnimations];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
@@ -416,10 +519,10 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-/*-(void) viewWillAppear:(BOOL)animated {
+-(void) viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
     [self startGPS];
-}*/
+}
 
 - (void) viewWillDisappear:(BOOL)animated {
 	[super viewWillDisappear:animated];

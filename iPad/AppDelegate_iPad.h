@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate_Shared.h"
+#import "GPS_Ipad.h"
 
 @interface AppDelegate_iPad : AppDelegate_Shared {
 }

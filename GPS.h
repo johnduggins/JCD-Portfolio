@@ -13,6 +13,7 @@
 
 @interface GPS : PrimaryViewController <CLLocationManagerDelegate> {
     CLLocationManager *locManager;
+	
     CLLocationDegrees lastLatitude;
     CLLocationDegrees lastLongitude;
     CLLocationDistance lastAltitude;
@@ -27,8 +28,8 @@
     UILabel *headingLabel;
     UILabel *speedLabel;
     
-    //	UIButton *startGPSButton;
-    //	UIButton *stopGPSButton;
+    UIButton *startGPSButton;
+    UIButton *stopGPSButton;
     
     int accuracyCounter;
 }
@@ -57,5 +58,8 @@
 -(void)startGPS;
 -(void)stopGPS;
 //-(void)displayMap;
+-(void)createButtonsAndLabels;
+-(void)moveUIElementsPortrait;
+-(void)moveUIElementsLandscape;
 
 @end

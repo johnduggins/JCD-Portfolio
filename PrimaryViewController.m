@@ -45,6 +45,8 @@
 	
 	if ([ver length]>=3) version = [[ver substringToIndex:3] floatValue];
 	
+	NSLog(@"This version is %@", ver);
+	
 	return (version >= 4.0 && version < 5.0);
 }
 
