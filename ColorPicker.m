@@ -75,6 +75,16 @@
 - (void) updateBackground {
 	self.view.backgroundColor = [UIColor colorWithRed:redSlider.value
 												green:greenSlider.value blue:blueSlider.value alpha:alphaSlider.value];
+	[ColorPicker setRedValue:redSlider.value];
+	[ColorPicker setGreenValue:greenSlider.value];
+	[ColorPicker setBlueValue:blueSlider.value];
+	[ColorPicker setAlphaValue:alphaSlider.value];
+	
+	[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithFloat:redSlider.value] forKey:@"redBGColor"];
+	[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithFloat:greenSlider.value] forKey:@"greenBGColor"];
+	[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithFloat:blueSlider.value] forKey:@"blueBGColor"];
+	[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithFloat:alphaSlider.value] forKey:@"alphaBGColor"];
+	[[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 @end
