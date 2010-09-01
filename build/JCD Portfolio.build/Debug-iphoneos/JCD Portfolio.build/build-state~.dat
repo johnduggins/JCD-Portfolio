@@ -1,46 +1,8 @@
 TJCD Portfolio
 v7
 r0
-t304697701.490267
+t304745256.767351
 cCheck dependencies
-cCpResource "build/Debug-iphoneos/JCD Portfolio.app/ResourceRules.plist" /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist
-cProcessInfoPlistFile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Info.plist" JCD_Portfolio-Info.plist
-cCopyPNGFile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Default-Landscape.png" Default-Landscape.png
-cCopyPNGFile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Default-Portrait.png" Default-Portrait.png
-cCopyPNGFile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Default.png" Default.png
-cCopyPNGFile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Default@2x.png" Default@2x.png
-cCopyPNGFile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Icon-72.png" Icon-72.png
-cCopyPNGFile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Icon-Small-50.png" Icon-Small-50.png
-cCopyPNGFile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Icon-Small.png" Icon-Small.png
-cCopyPNGFile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Icon-Small@2x.png" Icon-Small@2x.png
-cCopyPNGFile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Icon.png" Icon.png
-cCopyPNGFile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Icon@2x.png" Icon@2x.png
-cCpResource "build/Debug-iphoneos/JCD Portfolio.app/iTunesArtwork" iTunesArtwork
-cCopyPNGFile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Five.png" Five.png
-cCopyPNGFile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Four.png" Four.png
-cCopyPNGFile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/One.png" One.png
-cCopyPNGFile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Six.png" Six.png
-cCopyPNGFile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Three.png" Three.png
-cCopyPNGFile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Two.png" Two.png
-cProcessPCH /var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-gkcjcmktkdqclldbuesyxyodisll/JCD_Portfolio_Prefix.pch.pth JCD_Portfolio_Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cDataModelVersionCompile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/JCD_Portfolio.momd" /Users/jduggins/Dropbox/JCD-Portfolio/Shared/JCD_Portfolio.xcdatamodeld
-cCompileC "build/JCD Portfolio.build/Debug-iphoneos/JCD Portfolio.build/Objects-normal/armv7/main.o" /Users/jduggins/Dropbox/JCD-Portfolio/Shared/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC "build/JCD Portfolio.build/Debug-iphoneos/JCD Portfolio.build/Objects-normal/armv7/AppDelegate_iPad.o" /Users/jduggins/Dropbox/JCD-Portfolio/iPad/AppDelegate_iPad.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC "build/JCD Portfolio.build/Debug-iphoneos/JCD Portfolio.build/Objects-normal/armv7/AppDelegate_Shared.o" /Users/jduggins/Dropbox/JCD-Portfolio/Shared/AppDelegate_Shared.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC "build/JCD Portfolio.build/Debug-iphoneos/JCD Portfolio.build/Objects-normal/armv7/AppDelegate_iPhone.o" /Users/jduggins/Dropbox/JCD-Portfolio/iPhone/AppDelegate_iPhone.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC "build/JCD Portfolio.build/Debug-iphoneos/JCD Portfolio.build/Objects-normal/armv7/PrimaryViewController.o" /Users/jduggins/Dropbox/JCD-Portfolio/PrimaryViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC "build/JCD Portfolio.build/Debug-iphoneos/JCD Portfolio.build/Objects-normal/armv7/ColorPicker.o" /Users/jduggins/Dropbox/JCD-Portfolio/ColorPicker.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC "build/JCD Portfolio.build/Debug-iphoneos/JCD Portfolio.build/Objects-normal/armv7/GPS.o" /Users/jduggins/Dropbox/JCD-Portfolio/GPS.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC "build/JCD Portfolio.build/Debug-iphoneos/JCD Portfolio.build/Objects-normal/armv7/MapAnnotation.o" /Users/jduggins/Dropbox/JCD-Portfolio/MapAnnotation.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC "build/JCD Portfolio.build/Debug-iphoneos/JCD Portfolio.build/Objects-normal/armv7/GPS_iPhone.o" /Users/jduggins/Dropbox/JCD-Portfolio/iPhone/GPS_iPhone.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC "build/JCD Portfolio.build/Debug-iphoneos/JCD Portfolio.build/Objects-normal/armv7/GPS_iPad.o" /Users/jduggins/Dropbox/JCD-Portfolio/GPS_iPad.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC "build/JCD Portfolio.build/Debug-iphoneos/JCD Portfolio.build/Objects-normal/armv7/GPSTestMapViewController.o" /Users/jduggins/Dropbox/JCD-Portfolio/GPSTestMapViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/JCD Portfolio" normal armv7
-cGenerateDSYMFile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app.dSYM" "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/JCD Portfolio"
-cProcessProductPackaging "/Users/jduggins/Library/MobileDevice/Provisioning Profiles/E2234DFD-BE2F-42C7-BBC4-AA72E28C71DD.mobileprovision" "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/embedded.mobileprovision"
-cTouch "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app"
-cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphoneos/JCD Portfolio.build/JCD Portfolio.xcent"
-cCodeSign "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app"
 
 N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk
 c000000004C5B59520000000000000110
@@ -856,64 +818,64 @@ t1282074285
 s191
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app
-t1283004901
-s918
+t2
+s0
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app.dSYM
 t1283004901
 s102
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Default-Landscape.png
-t1283004900
-s4305
+t2
+s0
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Default-Portrait.png
-t1283004900
-s4589
+t2
+s0
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Default.png
-t1283004900
-s1340
+t2
+s0
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Default@2x.png
-t1283004900
-s3919
+t2
+s0
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Five.png
-t1283004900
-s465
+t2
+s0
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Four.png
-t1283004900
-s485
+t2
+s0
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Icon-72.png
-t1283004900
-s276
+t2
+s0
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Icon-Small-50.png
-t1283004900
-s232
+t2
+s0
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Icon-Small.png
-t1283004900
-s205
+t2
+s0
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Icon-Small@2x.png
-t1283004900
-s245
+t2
+s0
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Icon.png
-t1283004900
-s242
+t2
+s0
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Icon@2x.png
-t1283004900
-s346
+t2
+s0
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Info.plist
-t1283004900
-s1103
+t2
+s0
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/JCD Portfolio
 t1283004901
@@ -924,36 +886,36 @@ t1283004901
 s136
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/One.png
-t1283004900
-s241
+t2
+s0
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/PkgInfo
-t1283004900
-s8
+t2
+s0
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/ResourceRules.plist
 t1283004900
 s485
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Six.png
-t1283004900
-s485
+t2
+s0
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Three.png
-t1283004900
-s240
+t2
+s0
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/Two.png
-t1283004900
-s243
+t2
+s0
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/embedded.mobileprovision
-t1283004901
-s7643
+t2
+s0
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphoneos/JCD Portfolio.app/iTunesArtwork
-t1283004900
-s1545
+t2
+s0
 
 N/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphoneos/JCD Portfolio.build/JCD Portfolio.xcent
 t1283004901
@@ -1091,7 +1053,7 @@ s1553
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies304697700#304697700#0(0"0(0#1#0"8609015040#0"0#
+lSLF07#2@18"Check dependencies304745368#304745368#0(66"[BEROR]error: There is no SDK with the name or path 'iphoneos4.0'1(4@58"error: There is no SDK with the name or path 'iphoneos4.0'304745368#18446744073709551615#0#0(1@0"0(0#1#0"8617586976#0"0#
 
 CCodeSign "/Users/jduggins/Desktop/JCD Portfolio/build/Debug-iphoneos/JCD Portfolio.app"
 s303530799.174908

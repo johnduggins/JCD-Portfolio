@@ -10,10 +10,10 @@
 
 #define BARBUTTON(TITLE, SELECTOR) [[[UIBarButtonItem alloc] initWithTitle:TITLE style:UIBarButtonItemStylePlain target:self action:SELECTOR] autorelease];
 
-static CGFloat redValue = 0.0f;
-static CGFloat greenValue = 0.0f;
-static CGFloat blueValue = 1.0f;
-static CGFloat alphaValue = 1.0f;
+static CGFloat redValue;
+static CGFloat greenValue;
+static CGFloat blueValue;
+static CGFloat alphaValue;
 
 @interface PrimaryViewController : UIViewController {
 

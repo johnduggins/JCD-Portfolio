@@ -1,9 +1,9 @@
 TJCD Portfolio
 v7
 r0
-t303533707.324314
+t304746215.492207
 cCheck dependencies
-cProcessInfoPlistFile "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/Info.plist" JCD_Portfolio-Info.plist
+cProcessInfoPlistFile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/Info.plist" JCD_Portfolio-Info.plist
 cCpResource "build/Debug-iphonesimulator/JCD Portfolio.app/Default-Landscape.png" Default-Landscape.png
 cCpResource "build/Debug-iphonesimulator/JCD Portfolio.app/Default-Portrait.png" Default-Portrait.png
 cCpResource "build/Debug-iphonesimulator/JCD Portfolio.app/Default.png" Default.png
@@ -15,15 +15,28 @@ cCpResource "build/Debug-iphonesimulator/JCD Portfolio.app/Icon-Small@2x.png" Ic
 cCpResource "build/Debug-iphonesimulator/JCD Portfolio.app/Icon.png" Icon.png
 cCpResource "build/Debug-iphonesimulator/JCD Portfolio.app/Icon@2x.png" Icon@2x.png
 cCpResource "build/Debug-iphonesimulator/JCD Portfolio.app/iTunesArtwork" iTunesArtwork
-cProcessPCH /var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-dcdwhggdjpaiwxfpukrulzrblkcw/JCD_Portfolio_Prefix.pch.gch JCD_Portfolio_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cDataModelVersionCompile "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD_Portfolio.momd" "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/Shared/JCD_Portfolio.xcdatamodeld"
-cCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/main.o" "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/Shared/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/AppDelegate_iPad.o" "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/iPad/AppDelegate_iPad.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/AppDelegate_Shared.o" "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/Shared/AppDelegate_Shared.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/AppDelegate_iPhone.o" "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/iPhone/AppDelegate_iPhone.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD Portfolio" normal i386
-cGenerateDSYMFile "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app.dSYM" "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD Portfolio"
-cTouch "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app"
+cCpResource "build/Debug-iphonesimulator/JCD Portfolio.app/Five.png" Five.png
+cCpResource "build/Debug-iphonesimulator/JCD Portfolio.app/Four.png" Four.png
+cCpResource "build/Debug-iphonesimulator/JCD Portfolio.app/One.png" One.png
+cCpResource "build/Debug-iphonesimulator/JCD Portfolio.app/Six.png" Six.png
+cCpResource "build/Debug-iphonesimulator/JCD Portfolio.app/Three.png" Three.png
+cCpResource "build/Debug-iphonesimulator/JCD Portfolio.app/Two.png" Two.png
+cProcessPCH /var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-fyzpapahrsvncbcbubxmxpbyefip/JCD_Portfolio_Prefix.pch.pth JCD_Portfolio_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cDataModelVersionCompile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD_Portfolio.momd" /Users/jduggins/Dropbox/JCD-Portfolio/Shared/JCD_Portfolio.xcdatamodeld
+cCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/main.o" /Users/jduggins/Dropbox/JCD-Portfolio/Shared/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/AppDelegate_iPad.o" /Users/jduggins/Dropbox/JCD-Portfolio/iPad/AppDelegate_iPad.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/AppDelegate_Shared.o" /Users/jduggins/Dropbox/JCD-Portfolio/Shared/AppDelegate_Shared.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/AppDelegate_iPhone.o" /Users/jduggins/Dropbox/JCD-Portfolio/iPhone/AppDelegate_iPhone.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/PrimaryViewController.o" /Users/jduggins/Dropbox/JCD-Portfolio/PrimaryViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/ColorPicker.o" /Users/jduggins/Dropbox/JCD-Portfolio/ColorPicker.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/GPS.o" /Users/jduggins/Dropbox/JCD-Portfolio/GPS.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/MapAnnotation.o" /Users/jduggins/Dropbox/JCD-Portfolio/MapAnnotation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/GPS_iPhone.o" /Users/jduggins/Dropbox/JCD-Portfolio/iPhone/GPS_iPhone.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/GPS_iPad.o" /Users/jduggins/Dropbox/JCD-Portfolio/GPS_iPad.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/GPSTestMapViewController.o" /Users/jduggins/Dropbox/JCD-Portfolio/GPSTestMapViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD Portfolio" normal i386
+cGenerateDSYMFile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app.dSYM" "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD Portfolio"
+cTouch "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app"
 
 N/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk
 c000000004C5259980000000000000110
@@ -45,6 +58,16 @@ c000000004C4FEEB900000000002958A0
 t1280306873
 s2709664
 
+N/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000004C53AAEF000000000006B7C0
+t1280551663
+s440256
+
+N/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.h
+c000000004C53AAE800000000000001D0
+t1280551656
+s464
+
 N/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
 c000000004C4FEFCC000000000029D580
 t1280307148
@@ -54,6 +77,16 @@ N/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulato
 c000000004C4FEFBB0000000000001466
 t1280307131
 s5222
+
+N/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.h
+c000000004C5259E000000000000002FE
+t1280465376
+s766
+
+N/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/MapKit.framework/MapKit
+c000000004C5259EF000000000016DD10
+t1280465391
+s1498384
 
 N/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
 c000000004C5257B900000000000009CD
@@ -503,22 +536,408 @@ c000000004C4ADBC30000000000000609
 t1279974339
 s1545
 
+N/Users/jduggins/Dropbox/JCD-Portfolio/ColorPicker.h
+c000000004C6AE6AD000000000000025C
+t1282074285
+s604
+i<Foundation/Foundation.h>
+i"PrimaryViewController.h"
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/ColorPicker.m
+c000000004C79D72C0000000000000EC6
+t1283053356
+s3782
+i"ColorPicker.h"
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/Default-Landscape.png
+c000000004C6AE6AD0000000000000D47
+t1282074285
+s3399
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/Default-Portrait.png
+c000000004C6AE6AD0000000000000EB5
+t1282074285
+s3765
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/Default.png
+c000000004C6AE6AD000000000000046B
+t1282074285
+s1131
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/Default@2x.png
+c000000004C6AE6AD0000000000000C3C
+t1282074285
+s3132
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/Five.png
+c000000004C6AE6AD0000000000000163
+t1282074285
+s355
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/Four.png
+c000000004C6AE6AD000000000000016E
+t1282074285
+s366
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/GPS.h
+c000000004C71DCBB00000000000007F6
+t1282530491
+s2038
+i<Foundation/Foundation.h>
+i<CoreLocation/CoreLocation.h>
+i"PrimaryViewController.h"
+i"GPSTestMapViewController.h"
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/GPS.m
+c000000004C71DE45000000000000367A
+t1282530885
+s13946
+i"GPS.h"
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/GPSTestMapViewController.h
+c000000004C5F42AE0000000000000334
+t1281311406
+s820
+i<UIKit/UIKit.h>
+i<CoreLocation/CoreLocation.h>
+i<MapKit/MapKit.h>
+i"MapAnnotation.h"
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/GPSTestMapViewController.m
+c000000004C66D0BF0000000000001671
+t1281806527
+s5745
+i"GPSTestMapViewController.h"
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/GPS_iPad.h
+c000000004C71C5DA00000000000000E7
+t1282524634
+s231
+i<Foundation/Foundation.h>
+i"GPS.h"
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/GPS_iPad.m
+c000000004C71D44E00000000000008ED
+t1282528334
+s2285
+i"GPS_iPad.h"
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/Icon-72.png
+c000000004C6AE6AD00000000000000CA
+t1282074285
+s202
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/Icon-Small-50.png
+c000000004C6AE6AD00000000000000AC
+t1282074285
+s172
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/Icon-Small.png
+c000000004C6AE6AD0000000000000097
+t1282074285
+s151
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/Icon-Small@2x.png
+c000000004C6AE6AD00000000000000B5
+t1282074285
+s181
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/Icon.png
+c000000004C6AE6AD00000000000000B5
+t1282074285
+s181
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/Icon@2x.png
+c000000004C6AE6AD0000000000000117
+t1282074285
+s279
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/JCD_Portfolio_Prefix.pch
+c000000004C6AE6AD00000000000000C3
+t1282074285
+s195
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/MapAnnotation.h
+c000000004C5F351D00000000000001F9
+t1281307933
+s505
+i<Foundation/Foundation.h>
+i<MapKit/MapKit.h>
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/MapAnnotation.m
+c000000004C5F359500000000000001E3
+t1281308053
+s483
+i"MapAnnotation.h"
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/One.png
+c000000004C6AE6AD00000000000000BA
+t1282074285
+s186
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/PrimaryViewController.h
+c000000004C79D51F00000000000002F1
+t1283052831
+s753
+i<UIKit/UIKit.h>
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/PrimaryViewController.m
+c000000004C79D56D000000000000102B
+t1283052909
+s4139
+i"PrimaryViewController.h"
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/Shared/AppDelegate_Shared.h
+c000000004C6B382200000000000003C9
+t1282095138
+s969
+i<UIKit/UIKit.h>
+i<CoreData/CoreData.h>
+i"PrimaryViewController.h"
+i"ColorPicker.h"
+i"GPS.h"
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/Shared/AppDelegate_Shared.m
+c000000004C71CC590000000000002248
+t1282526297
+s8776
+i"AppDelegate_Shared.h"
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/Shared/JCD_Portfolio.xcdatamodeld
+c000000004C6AE6AD0000000000000088
+t1282074285
+s136
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/Shared/main.m
+c000000004C6AE6AD0000000000000325
+t1282074285
+s805
+i<UIKit/UIKit.h>
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/Six.png
+c000000004C6AE6AD0000000000000173
+t1282074285
+s371
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/Three.png
+c000000004C6AE6AD00000000000000BE
+t1282074285
+s190
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/Two.png
+c000000004C6AE6AD00000000000000BF
+t1282074285
+s191
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app
+t1283053356
+s850
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app.dSYM
+t1283053356
+s102
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/Default-Landscape.png
+t1282074285
+s3399
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/Default-Portrait.png
+t1282074285
+s3765
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/Default.png
+t1282074285
+s1131
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/Default@2x.png
+t1282074285
+s3132
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/Five.png
+t1283052598
+s355
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/Four.png
+t1283052598
+s366
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/Icon-72.png
+t1282074285
+s202
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/Icon-Small-50.png
+t1282074285
+s172
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/Icon-Small.png
+t1282074285
+s151
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/Icon-Small@2x.png
+t1282074285
+s181
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/Icon.png
+t1282074285
+s181
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/Icon@2x.png
+t1282074285
+s279
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/Info.plist
+t1282074285
+s935
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD Portfolio
+t1283053356
+s96480
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD_Portfolio.momd
+t1282074285
+s136
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/One.png
+t1283052598
+s186
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/PkgInfo
+t1282074285
+s8
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/Six.png
+t1283052598
+s371
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/Three.png
+t1283052598
+s190
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/Two.png
+t1283052598
+s191
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/iTunesArtwork
+t1283052598
+s1545
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/AppDelegate_Shared.o
+t1283052832
+s58416
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/AppDelegate_iPad.o
+t1283052832
+s49820
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/AppDelegate_iPhone.o
+t1283052832
+s51172
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/ColorPicker.o
+t1283053356
+s45712
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/GPS.o
+t1283052832
+s89624
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/GPSTestMapViewController.o
+t1283052601
+s58480
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/GPS_iPad.o
+t1283052832
+s34784
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/GPS_iPhone.o
+t1283052832
+s1176
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/JCD Portfolio.LinkFileList
+c000000004C79D436000000000000061D
+t1283052598
+s1565
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/MapAnnotation.o
+t1283052600
+s9940
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/PrimaryViewController.o
+t1283052909
+s42892
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/main.o
+t1283052600
+s4136
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/iPad/AppDelegate_iPad.h
+c000000004C71CCBA0000000000000120
+t1282526394
+s288
+i<UIKit/UIKit.h>
+i"AppDelegate_Shared.h"
+i"GPS_Ipad.h"
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/iPad/AppDelegate_iPad.m
+c000000004C71D9FD0000000000000EF5
+t1282529789
+s3829
+i"AppDelegate_iPad.h"
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/iPhone/AppDelegate_iPhone.h
+c000000004C71CCAF0000000000000126
+t1282526383
+s294
+i<UIKit/UIKit.h>
+i"AppDelegate_Shared.h"
+i"GPS_iPhone.h"
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/iPhone/AppDelegate_iPhone.m
+c000000004C71DBBF00000000000012E2
+t1282530239
+s4834
+i"AppDelegate_iPhone.h"
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/iPhone/GPS_iPhone.h
+c000000004C71C5CD00000000000000EB
+t1282524621
+s235
+i<Foundation/Foundation.h>
+i"GPS.h"
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/iPhone/GPS_iPhone.m
+c000000004C71D1DD000000000000014B
+t1282527709
+s331
+i"GPS_iPhone.h"
+
+N/Users/jduggins/Dropbox/JCD-Portfolio/iTunesArtwork
+c000000004C6AE6AE0000000000000609
+t1282074286
+s1545
+
 N/var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-dcdwhggdjpaiwxfpukrulzrblkcw/JCD_Portfolio_Prefix.pch.gch
 t1281840892
 s15207440
+
+N/var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-fyzpapahrsvncbcbubxmxpbyefip/JCD_Portfolio_Prefix.pch.pth
+t1283052599
+s2652716
 
 N/var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-fzwucvoeujeiivgfxhztbfgoggaf/JCD_Portfolio_Prefix.pch.gch
 t1281838012
 s15207440
 
 NJCD_Portfolio-Info.plist
-c000000004C674BAB0000000000000611
-t1281837995
+c000000004C6AE6AD0000000000000611
+t1282074285
 s1553
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies303533707#303533707#0(0"0(0#1#0"8608134496#0"0#
+lSLF07#2@18"Check dependencies304746215#304746215#0(0"0(0#1#0"8621070016#0"0#
 
 CCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/AppDelegate_Shared.o" "/Users/jduggins/Desktop/JCD Portfolio/Shared/AppDelegate_Shared.m" normal i386 objective-c com.apple.compilers.gcc.4_2
 s303533375.935404
@@ -546,6 +965,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@88"Compile /Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/Shared/AppDelegate_Shared.m303533707#303533707#0(0"0(0#0#80"/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/Shared/AppDelegate_Shared.m8088798513979351040#2267"    cd "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio"    setenv LANG en_US.US-ASCII    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -isysroot /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-generated-files.hmap" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-own-target-headers.hmap" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-all-target-headers.hmap" -iquote "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-project-headers.hmap" "-F/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator/include" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources/i386" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources" -include /var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-dcdwhggdjpaiwxfpukrulzrblkcw/JCD_Portfolio_Prefix.pch -c "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/Shared/AppDelegate_Shared.m" -o "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/AppDelegate_Shared.o"0#
 
+CCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/AppDelegate_Shared.o" /Users/jduggins/Dropbox/JCD-Portfolio/Shared/AppDelegate_Shared.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s304745632.274632
+e304745632.393129
+r1
+xCompileC
+xbuild/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/AppDelegate_Shared.o
+x/Users/jduggins/Dropbox/JCD-Portfolio/Shared/AppDelegate_Shared.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@73"Compile /Users/jduggins/Dropbox/JCD-Portfolio/Shared/AppDelegate_Shared.m304745632#304745632#0(0"0(0#0#65"/Users/jduggins/Dropbox/JCD-Portfolio/Shared/AppDelegate_Shared.m8620053536#2157"    cd /Users/jduggins/Dropbox/JCD-Portfolio    setenv LANG en_US.US-ASCII    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -isysroot /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-generated-files.hmap" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-own-target-headers.hmap" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-all-target-headers.hmap" -iquote "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-project-headers.hmap" -F/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator -F/Users/jduggins/Dropbox/JCD-Portfolio -I/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/include "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources/i386" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources" -include /var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-fyzpapahrsvncbcbubxmxpbyefip/JCD_Portfolio_Prefix.pch -c /Users/jduggins/Dropbox/JCD-Portfolio/Shared/AppDelegate_Shared.m -o "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/AppDelegate_Shared.o"0#
+
 CCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/AppDelegate_iPad.o" "/Users/jduggins/Desktop/JCD Portfolio/iPad/AppDelegate_iPad.m" normal i386 objective-c com.apple.compilers.gcc.4_2
 s303532889.405039
 e303532889.529755
@@ -571,6 +1003,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@84"Compile /Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/iPad/AppDelegate_iPad.m303533692#303533692#0(0"0(0#0#76"/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/iPad/AppDelegate_iPad.m8606249312#2261"    cd "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio"    setenv LANG en_US.US-ASCII    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -isysroot /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-generated-files.hmap" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-own-target-headers.hmap" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-all-target-headers.hmap" -iquote "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-project-headers.hmap" "-F/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator/include" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources/i386" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources" -include /var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-dcdwhggdjpaiwxfpukrulzrblkcw/JCD_Portfolio_Prefix.pch -c "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/iPad/AppDelegate_iPad.m" -o "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/AppDelegate_iPad.o"0#
+
+CCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/AppDelegate_iPad.o" /Users/jduggins/Dropbox/JCD-Portfolio/iPad/AppDelegate_iPad.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s304745632.273348
+e304745632.387232
+r1
+xCompileC
+xbuild/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/AppDelegate_iPad.o
+x/Users/jduggins/Dropbox/JCD-Portfolio/iPad/AppDelegate_iPad.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@69"Compile /Users/jduggins/Dropbox/JCD-Portfolio/iPad/AppDelegate_iPad.m304745632#304745632#0(0"0(0#0#61"/Users/jduggins/Dropbox/JCD-Portfolio/iPad/AppDelegate_iPad.m8619099488#2151"    cd /Users/jduggins/Dropbox/JCD-Portfolio    setenv LANG en_US.US-ASCII    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -isysroot /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-generated-files.hmap" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-own-target-headers.hmap" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-all-target-headers.hmap" -iquote "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-project-headers.hmap" -F/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator -F/Users/jduggins/Dropbox/JCD-Portfolio -I/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/include "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources/i386" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources" -include /var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-fyzpapahrsvncbcbubxmxpbyefip/JCD_Portfolio_Prefix.pch -c /Users/jduggins/Dropbox/JCD-Portfolio/iPad/AppDelegate_iPad.m -o "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/AppDelegate_iPad.o"0#
 
 CCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/AppDelegate_iPhone.o" "/Users/jduggins/Desktop/JCD Portfolio/iPhone/AppDelegate_iPhone.m" normal i386 objective-c com.apple.compilers.gcc.4_2
 s303532889.453364
@@ -598,6 +1043,148 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@88"Compile /Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/iPhone/AppDelegate_iPhone.m303533692#303533692#0(0"0(0#0#80"/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/iPhone/AppDelegate_iPhone.m8602268288#2267"    cd "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio"    setenv LANG en_US.US-ASCII    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -isysroot /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-generated-files.hmap" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-own-target-headers.hmap" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-all-target-headers.hmap" -iquote "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-project-headers.hmap" "-F/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator/include" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources/i386" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources" -include /var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-dcdwhggdjpaiwxfpukrulzrblkcw/JCD_Portfolio_Prefix.pch -c "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/iPhone/AppDelegate_iPhone.m" -o "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/AppDelegate_iPhone.o"0#
 
+CCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/AppDelegate_iPhone.o" /Users/jduggins/Dropbox/JCD-Portfolio/iPhone/AppDelegate_iPhone.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s304745632.275631
+e304745632.388570
+r1
+xCompileC
+xbuild/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/AppDelegate_iPhone.o
+x/Users/jduggins/Dropbox/JCD-Portfolio/iPhone/AppDelegate_iPhone.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@73"Compile /Users/jduggins/Dropbox/JCD-Portfolio/iPhone/AppDelegate_iPhone.m304745632#304745632#0(0"0(0#0#65"/Users/jduggins/Dropbox/JCD-Portfolio/iPhone/AppDelegate_iPhone.m8620590752#2157"    cd /Users/jduggins/Dropbox/JCD-Portfolio    setenv LANG en_US.US-ASCII    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -isysroot /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-generated-files.hmap" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-own-target-headers.hmap" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-all-target-headers.hmap" -iquote "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-project-headers.hmap" -F/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator -F/Users/jduggins/Dropbox/JCD-Portfolio -I/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/include "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources/i386" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources" -include /var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-fyzpapahrsvncbcbubxmxpbyefip/JCD_Portfolio_Prefix.pch -c /Users/jduggins/Dropbox/JCD-Portfolio/iPhone/AppDelegate_iPhone.m -o "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/AppDelegate_iPhone.o"0#
+
+CCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/ColorPicker.o" /Users/jduggins/Dropbox/JCD-Portfolio/ColorPicker.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s304746156.467059
+e304746156.535582
+r1
+xCompileC
+xbuild/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/ColorPicker.o
+x/Users/jduggins/Dropbox/JCD-Portfolio/ColorPicker.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@59"Compile /Users/jduggins/Dropbox/JCD-Portfolio/ColorPicker.m304746156#304746156#0(0"0(0#0#51"/Users/jduggins/Dropbox/JCD-Portfolio/ColorPicker.m8631272992#2136"    cd /Users/jduggins/Dropbox/JCD-Portfolio    setenv LANG en_US.US-ASCII    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -isysroot /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-generated-files.hmap" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-own-target-headers.hmap" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-all-target-headers.hmap" -iquote "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-project-headers.hmap" -F/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator -F/Users/jduggins/Dropbox/JCD-Portfolio -I/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/include "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources/i386" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources" -include /var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-fyzpapahrsvncbcbubxmxpbyefip/JCD_Portfolio_Prefix.pch -c /Users/jduggins/Dropbox/JCD-Portfolio/ColorPicker.m -o "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/ColorPicker.o"0#
+
+CCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/GPS.o" /Users/jduggins/Dropbox/JCD-Portfolio/GPS.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s304745632.387549
+e304745632.564088
+r1
+xCompileC
+xbuild/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/GPS.o
+x/Users/jduggins/Dropbox/JCD-Portfolio/GPS.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/jduggins/Dropbox/JCD-Portfolio/GPS.m:63:66: warning: 'locationServicesEnabled' is deprecated [-Wdeprecated-declarations]
+o                  ([CLLocationManager locationServicesEnabled])) || (locManager.locationServicesEnabled)) {
+o                                                                                ^
+o/Users/jduggins/Dropbox/JCD-Portfolio/GPS.m:69:59: warning: 'headingAvailable' is deprecated [-Wdeprecated-declarations]
+o                  ([CLLocationManager headingAvailable])) || (locManager.headingAvailable)) {
+o                                                                         ^
+o/Users/jduggins/Dropbox/JCD-Portfolio/GPS.m:78:66: warning: 'locationServicesEnabled' is deprecated [-Wdeprecated-declarations]
+o                  ([CLLocationManager locationServicesEnabled])) || (locManager.locationServicesEnabled)) {
+o                                                                                ^
+o/Users/jduggins/Dropbox/JCD-Portfolio/GPS.m:84:59: warning: 'headingAvailable' is deprecated [-Wdeprecated-declarations]
+o                  ([CLLocationManager headingAvailable])) || (locManager.headingAvailable)) {
+o                                                                         ^
+o/Users/jduggins/Dropbox/JCD-Portfolio/GPS.m:101:68: warning: 'locationServicesEnabled' is deprecated [-Wdeprecated-declarations]
+o                  (![CLLocationManager locationServicesEnabled])) || !(locManager.locationServicesEnabled)) {
+o                                                                                  ^
+o/Users/jduggins/Dropbox/JCD-Portfolio/GPS.m:166:23: warning: 'headingAvailable' is deprecated [-Wdeprecated-declarations]
+o         else if (!locManager.headingAvailable) headingLabel.text = @"No Compass";
+o                              ^
+o/Users/jduggins/Dropbox/JCD-Portfolio/GPS.m:261:63: warning: 'headingAvailable' is deprecated [-Wdeprecated-declarations]
+o                           (![CLLocationManager headingAvailable])) || !(locManager.headingAvailable)) && self.lastCourse >= 0)
+o                                                                                    ^
+o7 warnings generated.
+lSLF07#2@51"Compile /Users/jduggins/Dropbox/JCD-Portfolio/GPS.m304745632#304745632#0(2134"/Users/jduggins/Dropbox/JCD-Portfolio/GPS.m:63:66: warning: 'locationServicesEnabled' is deprecated [-Wdeprecated-declarations]                  ([CLLocationManager locationServicesEnabled])) || (locManager.locationServicesEnabled)) {                                                                                ^/Users/jduggins/Dropbox/JCD-Portfolio/GPS.m:69:59: warning: 'headingAvailable' is deprecated [-Wdeprecated-declarations]                  ([CLLocationManager headingAvailable])) || (locManager.headingAvailable)) {                                                                         ^/Users/jduggins/Dropbox/JCD-Portfolio/GPS.m:78:66: warning: 'locationServicesEnabled' is deprecated [-Wdeprecated-declarations]                  ([CLLocationManager locationServicesEnabled])) || (locManager.locationServicesEnabled)) {                                                                                ^/Users/jduggins/Dropbox/JCD-Portfolio/GPS.m:84:59: warning: 'headingAvailable' is deprecated [-Wdeprecated-declarations]                  ([CLLocationManager headingAvailable])) || (locManager.headingAvailable)) {                                                                         ^/Users/jduggins/Dropbox/JCD-Portfolio/GPS.m:101:68: warning: 'locationServicesEnabled' is deprecated [-Wdeprecated-declarations]                  (![CLLocationManager locationServicesEnabled])) || !(locManager.locationServicesEnabled)) {                                                                                  ^/Users/jduggins/Dropbox/JCD-Portfolio/GPS.m:166:23: warning: 'headingAvailable' is deprecated [-Wdeprecated-declarations]         else if (!locManager.headingAvailable) headingLabel.text = @"No Compass";                              ^/Users/jduggins/Dropbox/JCD-Portfolio/GPS.m:261:63: warning: 'headingAvailable' is deprecated [-Wdeprecated-declarations]                           (![CLLocationManager headingAvailable])) || !(locManager.headingAvailable)) && self.lastCourse >= 0)                                                                                    ^7 warnings generated.7(22@39"'locationServicesEnabled' is deprecated304745632#0#128#0(6@43"/Users/jduggins/Dropbox/JCD-Portfolio/GPS.m304223685#63#66#0#0#15"* is deprecated0(22@32"'headingAvailable' is deprecated304745632#318#121#0(6@43"/Users/jduggins/Dropbox/JCD-Portfolio/GPS.m304223685#69#59#0#0#15"* is deprecated0(22@39"'locationServicesEnabled' is deprecated304745632#608#128#0(6@43"/Users/jduggins/Dropbox/JCD-Portfolio/GPS.m304223685#78#66#0#0#15"* is deprecated0(22@32"'headingAvailable' is deprecated304745632#926#121#0(6@43"/Users/jduggins/Dropbox/JCD-Portfolio/GPS.m304223685#84#59#0#0#15"* is deprecated0(22@39"'locationServicesEnabled' is deprecated304745632#1216#129#0(6@43"/Users/jduggins/Dropbox/JCD-Portfolio/GPS.m304223685#101#68#0#0#15"* is deprecated0(22@32"'headingAvailable' is deprecated304745632#1539#122#0(6@43"/Users/jduggins/Dropbox/JCD-Portfolio/GPS.m304223685#166#23#0#0#15"* is deprecated0(22@32"'headingAvailable' is deprecated304745632#1776#122#0(6@43"/Users/jduggins/Dropbox/JCD-Portfolio/GPS.m304223685#261#63#0#0#15"* is deprecated0(0#0#43"/Users/jduggins/Dropbox/JCD-Portfolio/GPS.m8621207872#2120"    cd /Users/jduggins/Dropbox/JCD-Portfolio    setenv LANG en_US.US-ASCII    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -isysroot /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-generated-files.hmap" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-own-target-headers.hmap" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-all-target-headers.hmap" -iquote "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-project-headers.hmap" -F/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator -F/Users/jduggins/Dropbox/JCD-Portfolio -I/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/include "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources/i386" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources" -include /var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-fyzpapahrsvncbcbubxmxpbyefip/JCD_Portfolio_Prefix.pch -c /Users/jduggins/Dropbox/JCD-Portfolio/GPS.m -o "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/GPS.o"0#
+
+CCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/GPSTestMapViewController.o" /Users/jduggins/Dropbox/JCD-Portfolio/GPSTestMapViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s304745400.958748
+e304745401.070079
+r1
+xCompileC
+xbuild/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/GPSTestMapViewController.o
+x/Users/jduggins/Dropbox/JCD-Portfolio/GPSTestMapViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/jduggins/Dropbox/JCD-Portfolio/GPSTestMapViewController.m:34:68: warning: 'locationServicesEnabled' is deprecated [-Wdeprecated-declarations]
+o                  (![CLLocationManager locationServicesEnabled])) || !(locManager.locationServicesEnabled)) {
+o                                                                                  ^
+o/Users/jduggins/Dropbox/JCD-Portfolio/GPSTestMapViewController.m:66:66: warning: 'locationServicesEnabled' is deprecated [-Wdeprecated-declarations]
+o                  ([CLLocationManager locationServicesEnabled])) || (locManager.locationServicesEnabled)) {
+o                                                                                ^
+o/Users/jduggins/Dropbox/JCD-Portfolio/GPSTestMapViewController.m:71:59: warning: 'headingAvailable' is deprecated [-Wdeprecated-declarations]
+o                  ([CLLocationManager headingAvailable])) || (locManager.headingAvailable)) {
+o                                                                         ^
+o/Users/jduggins/Dropbox/JCD-Portfolio/GPSTestMapViewController.m:79:66: warning: 'locationServicesEnabled' is deprecated [-Wdeprecated-declarations]
+o                  ([CLLocationManager locationServicesEnabled])) || (locManager.locationServicesEnabled)) {
+o                                                                                ^
+o/Users/jduggins/Dropbox/JCD-Portfolio/GPSTestMapViewController.m:84:59: warning: 'headingAvailable' is deprecated [-Wdeprecated-declarations]
+o                  ([CLLocationManager headingAvailable])) || (locManager.headingAvailable)) {
+o                                                                         ^
+o5 warnings generated.
+lSLF07#2@72"Compile /Users/jduggins/Dropbox/JCD-Portfolio/GPSTestMapViewController.m304745400#304745401#0(1665"/Users/jduggins/Dropbox/JCD-Portfolio/GPSTestMapViewController.m:34:68: warning: 'locationServicesEnabled' is deprecated [-Wdeprecated-declarations]                  (![CLLocationManager locationServicesEnabled])) || !(locManager.locationServicesEnabled)) {                                                                                  ^/Users/jduggins/Dropbox/JCD-Portfolio/GPSTestMapViewController.m:66:66: warning: 'locationServicesEnabled' is deprecated [-Wdeprecated-declarations]                  ([CLLocationManager locationServicesEnabled])) || (locManager.locationServicesEnabled)) {                                                                                ^/Users/jduggins/Dropbox/JCD-Portfolio/GPSTestMapViewController.m:71:59: warning: 'headingAvailable' is deprecated [-Wdeprecated-declarations]                  ([CLLocationManager headingAvailable])) || (locManager.headingAvailable)) {                                                                         ^/Users/jduggins/Dropbox/JCD-Portfolio/GPSTestMapViewController.m:79:66: warning: 'locationServicesEnabled' is deprecated [-Wdeprecated-declarations]                  ([CLLocationManager locationServicesEnabled])) || (locManager.locationServicesEnabled)) {                                                                                ^/Users/jduggins/Dropbox/JCD-Portfolio/GPSTestMapViewController.m:84:59: warning: 'headingAvailable' is deprecated [-Wdeprecated-declarations]                  ([CLLocationManager headingAvailable])) || (locManager.headingAvailable)) {                                                                         ^5 warnings generated.5(22@39"'locationServicesEnabled' is deprecated304745400#0#149#0(6@64"/Users/jduggins/Dropbox/JCD-Portfolio/GPSTestMapViewController.m303499327#34#68#0#0#15"* is deprecated0(22@39"'locationServicesEnabled' is deprecated304745401#343#149#0(6@64"/Users/jduggins/Dropbox/JCD-Portfolio/GPSTestMapViewController.m303499327#66#66#0#0#15"* is deprecated0(22@32"'headingAvailable' is deprecated304745401#682#142#0(6@64"/Users/jduggins/Dropbox/JCD-Portfolio/GPSTestMapViewController.m303499327#71#59#0#0#15"* is deprecated0(22@39"'locationServicesEnabled' is deprecated304745401#993#149#0(6@64"/Users/jduggins/Dropbox/JCD-Portfolio/GPSTestMapViewController.m303499327#79#66#0#0#15"* is deprecated0(22@32"'headingAvailable' is deprecated304745401#1332#142#0(6@64"/Users/jduggins/Dropbox/JCD-Portfolio/GPSTestMapViewController.m303499327#84#59#0#0#15"* is deprecated0(0#0#64"/Users/jduggins/Dropbox/JCD-Portfolio/GPSTestMapViewController.m8619024256#2162"    cd /Users/jduggins/Dropbox/JCD-Portfolio    setenv LANG en_US.US-ASCII    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -isysroot /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-generated-files.hmap" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-own-target-headers.hmap" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-all-target-headers.hmap" -iquote "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-project-headers.hmap" -F/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator -F/Users/jduggins/Dropbox/JCD-Portfolio -I/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/include "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources/i386" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources" -include /var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-fyzpapahrsvncbcbubxmxpbyefip/JCD_Portfolio_Prefix.pch -c /Users/jduggins/Dropbox/JCD-Portfolio/GPSTestMapViewController.m -o "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/GPSTestMapViewController.o"0#
+
+CCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/GPS_iPad.o" /Users/jduggins/Dropbox/JCD-Portfolio/GPS_iPad.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s304745632.393264
+e304745632.493837
+r1
+xCompileC
+xbuild/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/GPS_iPad.o
+x/Users/jduggins/Dropbox/JCD-Portfolio/GPS_iPad.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@56"Compile /Users/jduggins/Dropbox/JCD-Portfolio/GPS_iPad.m304745632#304745632#0(0"0(0#0#48"/Users/jduggins/Dropbox/JCD-Portfolio/GPS_iPad.m8621189952#2130"    cd /Users/jduggins/Dropbox/JCD-Portfolio    setenv LANG en_US.US-ASCII    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -isysroot /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-generated-files.hmap" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-own-target-headers.hmap" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-all-target-headers.hmap" -iquote "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-project-headers.hmap" -F/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator -F/Users/jduggins/Dropbox/JCD-Portfolio -I/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/include "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources/i386" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources" -include /var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-fyzpapahrsvncbcbubxmxpbyefip/JCD_Portfolio_Prefix.pch -c /Users/jduggins/Dropbox/JCD-Portfolio/GPS_iPad.m -o "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/GPS_iPad.o"0#
+
+CCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/GPS_iPhone.o" /Users/jduggins/Dropbox/JCD-Portfolio/iPhone/GPS_iPhone.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s304745632.388791
+e304745632.452790
+r1
+xCompileC
+xbuild/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/GPS_iPhone.o
+x/Users/jduggins/Dropbox/JCD-Portfolio/iPhone/GPS_iPhone.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@65"Compile /Users/jduggins/Dropbox/JCD-Portfolio/iPhone/GPS_iPhone.m304745632#304745632#0(0"0(0#0#57"/Users/jduggins/Dropbox/JCD-Portfolio/iPhone/GPS_iPhone.m8621270816#2141"    cd /Users/jduggins/Dropbox/JCD-Portfolio    setenv LANG en_US.US-ASCII    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -isysroot /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-generated-files.hmap" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-own-target-headers.hmap" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-all-target-headers.hmap" -iquote "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-project-headers.hmap" -F/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator -F/Users/jduggins/Dropbox/JCD-Portfolio -I/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/include "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources/i386" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources" -include /var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-fyzpapahrsvncbcbubxmxpbyefip/JCD_Portfolio_Prefix.pch -c /Users/jduggins/Dropbox/JCD-Portfolio/iPhone/GPS_iPhone.m -o "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/GPS_iPhone.o"0#
+
+CCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/MapAnnotation.o" /Users/jduggins/Dropbox/JCD-Portfolio/MapAnnotation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s304745400.907573
+e304745400.970639
+r1
+xCompileC
+xbuild/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/MapAnnotation.o
+x/Users/jduggins/Dropbox/JCD-Portfolio/MapAnnotation.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@61"Compile /Users/jduggins/Dropbox/JCD-Portfolio/MapAnnotation.m304745400#304745400#0(0"0(0#0#53"/Users/jduggins/Dropbox/JCD-Portfolio/MapAnnotation.m8618136992#2140"    cd /Users/jduggins/Dropbox/JCD-Portfolio    setenv LANG en_US.US-ASCII    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -isysroot /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-generated-files.hmap" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-own-target-headers.hmap" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-all-target-headers.hmap" -iquote "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-project-headers.hmap" -F/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator -F/Users/jduggins/Dropbox/JCD-Portfolio -I/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/include "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources/i386" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources" -include /var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-fyzpapahrsvncbcbubxmxpbyefip/JCD_Portfolio_Prefix.pch -c /Users/jduggins/Dropbox/JCD-Portfolio/MapAnnotation.m -o "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/MapAnnotation.o"0#
+
+CCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/PrimaryViewController.o" /Users/jduggins/Dropbox/JCD-Portfolio/PrimaryViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s304745709.685545
+e304745709.733228
+r1
+xCompileC
+xbuild/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/PrimaryViewController.o
+x/Users/jduggins/Dropbox/JCD-Portfolio/PrimaryViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@69"Compile /Users/jduggins/Dropbox/JCD-Portfolio/PrimaryViewController.m304745709#304745709#0(0"0(0#0#61"/Users/jduggins/Dropbox/JCD-Portfolio/PrimaryViewController.m8619834016#2156"    cd /Users/jduggins/Dropbox/JCD-Portfolio    setenv LANG en_US.US-ASCII    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -isysroot /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-generated-files.hmap" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-own-target-headers.hmap" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-all-target-headers.hmap" -iquote "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-project-headers.hmap" -F/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator -F/Users/jduggins/Dropbox/JCD-Portfolio -I/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/include "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources/i386" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources" -include /var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-fyzpapahrsvncbcbubxmxpbyefip/JCD_Portfolio_Prefix.pch -c /Users/jduggins/Dropbox/JCD-Portfolio/PrimaryViewController.m -o "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/PrimaryViewController.o"0#
+
 CCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/main.o" "/Users/jduggins/Desktop/JCD Portfolio/Shared/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
 s303531045.526316
 e303531045.620550
@@ -623,6 +1210,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@74"Compile /Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/Shared/main.m303533692#303533692#0(0"0(0#0#66"/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/Shared/main.m8602796192#2239"    cd "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio"    setenv LANG en_US.US-ASCII    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -isysroot /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-generated-files.hmap" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-own-target-headers.hmap" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-all-target-headers.hmap" -iquote "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-project-headers.hmap" "-F/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator/include" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources/i386" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources" -include /var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-dcdwhggdjpaiwxfpukrulzrblkcw/JCD_Portfolio_Prefix.pch -c "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/Shared/main.m" -o "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/main.o"0#
+
+CCompileC "build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/main.o" /Users/jduggins/Dropbox/JCD-Portfolio/Shared/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s304745399.684293
+e304745400.172816
+r1
+xCompileC
+xbuild/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/main.o
+x/Users/jduggins/Dropbox/JCD-Portfolio/Shared/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@59"Compile /Users/jduggins/Dropbox/JCD-Portfolio/Shared/main.m304745399#304745400#0(0"0(0#0#51"/Users/jduggins/Dropbox/JCD-Portfolio/Shared/main.m8610102528#2129"    cd /Users/jduggins/Dropbox/JCD-Portfolio    setenv LANG en_US.US-ASCII    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -isysroot /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-generated-files.hmap" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-own-target-headers.hmap" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-all-target-headers.hmap" -iquote "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-project-headers.hmap" -F/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator -F/Users/jduggins/Dropbox/JCD-Portfolio -I/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/include "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources/i386" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources" -include /var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-fyzpapahrsvncbcbubxmxpbyefip/JCD_Portfolio_Prefix.pch -c /Users/jduggins/Dropbox/JCD-Portfolio/Shared/main.m -o "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/main.o"0#
 
 CCompileXIB "/Users/jduggins/Desktop/JCD Portfolio/iPad/MainWindow_iPad.xib"
 s303530811.107796
@@ -682,6 +1282,24 @@ xbuild/Debug-iphonesimulator/JCD Portfolio.app/Default@2x.png
 xDefault@2x.png
 lSLF07#2@19"Copy Default@2x.png303530811#303530811#0(0"0(0#0#52"/Users/jduggins/Desktop/JCD Portfolio/Default@2x.png8611137536#479"    cd "/Users/jduggins/Desktop/JCD Portfolio"    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/jduggins/Desktop/JCD Portfolio/Default@2x.png" "/Users/jduggins/Desktop/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app"0#
 
+CCpResource "build/Debug-iphonesimulator/JCD Portfolio.app/Five.png" Five.png
+s304745398.945619
+e304745398.955810
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/JCD Portfolio.app/Five.png
+xFive.png
+lSLF07#2@13"Copy Five.png304745398#304745398#0(0"0(0#0#46"/Users/jduggins/Dropbox/JCD-Portfolio/Five.png8596794176#469"    cd /Users/jduggins/Dropbox/JCD-Portfolio    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jduggins/Dropbox/JCD-Portfolio/Five.png "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app"0#
+
+CCpResource "build/Debug-iphonesimulator/JCD Portfolio.app/Four.png" Four.png
+s304745398.946326
+e304745398.956021
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/JCD Portfolio.app/Four.png
+xFour.png
+lSLF07#2@13"Copy Four.png304745398#304745398#0(0"0(0#0#46"/Users/jduggins/Dropbox/JCD-Portfolio/Four.png8619045152#469"    cd /Users/jduggins/Dropbox/JCD-Portfolio    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jduggins/Dropbox/JCD-Portfolio/Four.png "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app"0#
+
 CCpResource "build/Debug-iphonesimulator/JCD Portfolio.app/Icon-72.png" Icon-72.png
 s303530811.112970
 e303530811.127268
@@ -736,14 +1354,50 @@ xbuild/Debug-iphonesimulator/JCD Portfolio.app/Icon@2x.png
 xIcon@2x.png
 lSLF07#2@16"Copy Icon@2x.png303530811#303530811#0(0"0(0#0#49"/Users/jduggins/Desktop/JCD Portfolio/Icon@2x.png8666702144#476"    cd "/Users/jduggins/Desktop/JCD Portfolio"    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/jduggins/Desktop/JCD Portfolio/Icon@2x.png" "/Users/jduggins/Desktop/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app"0#
 
+CCpResource "build/Debug-iphonesimulator/JCD Portfolio.app/One.png" One.png
+s304745398.947045
+e304745398.958478
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/JCD Portfolio.app/One.png
+xOne.png
+lSLF07#2@12"Copy One.png304745398#304745398#0(0"0(0#0#45"/Users/jduggins/Dropbox/JCD-Portfolio/One.png8618451584#468"    cd /Users/jduggins/Dropbox/JCD-Portfolio    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jduggins/Dropbox/JCD-Portfolio/One.png "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app"0#
+
+CCpResource "build/Debug-iphonesimulator/JCD Portfolio.app/Six.png" Six.png
+s304745398.947761
+e304745398.958023
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/JCD Portfolio.app/Six.png
+xSix.png
+lSLF07#2@12"Copy Six.png304745398#304745398#0(0"0(0#0#45"/Users/jduggins/Dropbox/JCD-Portfolio/Six.png8618079840#468"    cd /Users/jduggins/Dropbox/JCD-Portfolio    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jduggins/Dropbox/JCD-Portfolio/Six.png "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app"0#
+
+CCpResource "build/Debug-iphonesimulator/JCD Portfolio.app/Three.png" Three.png
+s304745398.948505
+e304745398.960781
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/JCD Portfolio.app/Three.png
+xThree.png
+lSLF07#2@14"Copy Three.png304745398#304745398#0(0"0(0#0#47"/Users/jduggins/Dropbox/JCD-Portfolio/Three.png8616614592#470"    cd /Users/jduggins/Dropbox/JCD-Portfolio    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jduggins/Dropbox/JCD-Portfolio/Three.png "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app"0#
+
+CCpResource "build/Debug-iphonesimulator/JCD Portfolio.app/Two.png" Two.png
+s304745398.949251
+e304745398.956189
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/JCD Portfolio.app/Two.png
+xTwo.png
+lSLF07#2@12"Copy Two.png304745398#304745398#0(0"0(0#0#45"/Users/jduggins/Dropbox/JCD-Portfolio/Two.png8607752832#468"    cd /Users/jduggins/Dropbox/JCD-Portfolio    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jduggins/Dropbox/JCD-Portfolio/Two.png "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app"0#
+
 CCpResource "build/Debug-iphonesimulator/JCD Portfolio.app/iTunesArtwork" iTunesArtwork
-s303530811.125630
-e303530811.147948
+s304745398.944942
+e304745398.955428
 r1
 xCpResource
 xbuild/Debug-iphonesimulator/JCD Portfolio.app/iTunesArtwork
 xiTunesArtwork
-lSLF07#2@18"Copy iTunesArtwork303530811#303530811#0(0"0(0#0#51"/Users/jduggins/Desktop/JCD Portfolio/iTunesArtwork8666564896#478"    cd "/Users/jduggins/Desktop/JCD Portfolio"    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/jduggins/Desktop/JCD Portfolio/iTunesArtwork" "/Users/jduggins/Desktop/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app"0#
+lSLF07#2@18"Copy iTunesArtwork304745398#304745398#0(0"0(0#0#51"/Users/jduggins/Dropbox/JCD-Portfolio/iTunesArtwork8601178176#474"    cd /Users/jduggins/Dropbox/JCD-Portfolio    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jduggins/Dropbox/JCD-Portfolio/iTunesArtwork "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app"0#
 
 CDataModelVersionCompile "/Users/jduggins/Desktop/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD_Portfolio.momd" "/Users/jduggins/Desktop/JCD Portfolio/Shared/JCD_Portfolio.xcdatamodeld"
 s303530812.231532
@@ -755,6 +1409,9 @@ x/Users/jduggins/Desktop/JCD Portfolio/Shared/JCD_Portfolio.xcdatamodeld
 lSLF07#2@124"DataModelVersionCompile "build/Debug-iphonesimulator/JCD Portfolio.app/JCD_Portfolio.momd" Shared/JCD_Portfolio.xcdatamodeld303530812#303530812#0(0"0(0#0#71"/Users/jduggins/Desktop/JCD Portfolio/Shared/JCD_Portfolio.xcdatamodeld8658419072#426"    cd "/Users/jduggins/Desktop/JCD Portfolio"    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/usr/bin/momc -XD_MOMC_TARGET_VERSION=10.6 "/Users/jduggins/Desktop/JCD Portfolio/Shared/JCD_Portfolio.xcdatamodeld" "/Users/jduggins/Desktop/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD_Portfolio.momd"0#
 
 CDataModelVersionCompile "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD_Portfolio.momd" "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/Shared/JCD_Portfolio.xcdatamodeld"
+r0
+
+CDataModelVersionCompile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD_Portfolio.momd" /Users/jduggins/Dropbox/JCD-Portfolio/Shared/JCD_Portfolio.xcdatamodeld
 r0
 
 CGenerateDSYMFile "/Users/jduggins/Desktop/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app.dSYM" "/Users/jduggins/Desktop/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD Portfolio"
@@ -774,6 +1431,15 @@ xGenerateDSYMFile
 x/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app.dSYM
 x/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD Portfolio
 lSLF07#2@131"GenerateDSYMFile "build/Debug-iphonesimulator/JCD Portfolio.app.dSYM" "build/Debug-iphonesimulator/JCD Portfolio.app/JCD Portfolio"303533707#303533707#0(0"0(0#0#112"/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD Portfolio8608112736#461"    cd "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio"    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/usr/bin/dsymutil "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD Portfolio" -o "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app.dSYM"0#
+
+CGenerateDSYMFile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app.dSYM" "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD Portfolio"
+s304746156.566036
+e304746156.596995
+r1
+xGenerateDSYMFile
+x/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app.dSYM
+x/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD Portfolio
+lSLF07#2@131"GenerateDSYMFile "build/Debug-iphonesimulator/JCD Portfolio.app.dSYM" "build/Debug-iphonesimulator/JCD Portfolio.app/JCD Portfolio"304746156#304746156#0(0"0(0#0#97"/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD Portfolio8633599424#414"    cd /Users/jduggins/Dropbox/JCD-Portfolio    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/usr/bin/dsymutil "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD Portfolio" -o "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app.dSYM"0#
 
 CLd "/Users/jduggins/Desktop/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD Portfolio" normal i386
 s303533376.058364
@@ -795,6 +1461,16 @@ xnormal
 xi386
 lSLF07#2@117"Link /Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD Portfolio303533707#303533707#0(0"0(0#0#0"8608343712#1046"    cd "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk "-L/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator" "-F/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator" -filelist "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/JCD Portfolio.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -o "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD Portfolio"0#
 
+CLd "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD Portfolio" normal i386
+s304746156.535710
+e304746156.565937
+r1
+xLd
+x/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD Portfolio
+xnormal
+xi386
+lSLF07#2@102"Link /Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD Portfolio304746156#304746156#0(0"0(0#0#0"8638098688#1045"    cd /Users/jduggins/Dropbox/JCD-Portfolio    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -arch i386 -isysroot /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -L/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator -F/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator -F/Users/jduggins/Dropbox/JCD-Portfolio -filelist "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/Objects-normal/i386/JCD Portfolio.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -framework CoreLocation -framework MapKit -o "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/JCD Portfolio"0#
+
 CProcessInfoPlistFile "/Users/jduggins/Desktop/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/Info.plist" JCD_Portfolio-Info.plist
 s303530811.103312
 e303530811.107672
@@ -805,6 +1481,9 @@ xJCD_Portfolio-Info.plist
 lSLF07#2@32"Process JCD_Portfolio-Info.plist303530811#303530811#0(0"0(0#0#62"/Users/jduggins/Desktop/JCD Portfolio/JCD_Portfolio-Info.plist8646059904#508"    cd "/Users/jduggins/Desktop/JCD Portfolio"    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility JCD_Portfolio-Info.plist -genpkginfo "/Users/jduggins/Desktop/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/jduggins/Desktop/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/Info.plist"0#
 
 CProcessInfoPlistFile "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/Info.plist" JCD_Portfolio-Info.plist
+r0
+
+CProcessInfoPlistFile "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app/Info.plist" JCD_Portfolio-Info.plist
 r0
 
 CProcessPCH /var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-dcdwhggdjpaiwxfpukrulzrblkcw/JCD_Portfolio_Prefix.pch.gch JCD_Portfolio_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
@@ -819,6 +1498,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@35"Precompile JCD_Portfolio_Prefix.pch303533692#303533692#0(0"0(0#0#77"/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/JCD_Portfolio_Prefix.pch8676578743001571328#2102"    cd "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio"    setenv LANG en_US.US-ASCII    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -isysroot /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-generated-files.hmap" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-own-target-headers.hmap" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-all-target-headers.hmap" -iquote "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-project-headers.hmap" "-F/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator/include" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources/i386" "-I/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources" -c "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/JCD_Portfolio_Prefix.pch" -o /var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-dcdwhggdjpaiwxfpukrulzrblkcw/JCD_Portfolio_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-fyzpapahrsvncbcbubxmxpbyefip/JCD_Portfolio_Prefix.pch.pth JCD_Portfolio_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s304745398.960997
+e304745399.684150
+r1
+xProcessPCH
+x/var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-fyzpapahrsvncbcbubxmxpbyefip/JCD_Portfolio_Prefix.pch.pth
+xJCD_Portfolio_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@35"Precompile JCD_Portfolio_Prefix.pch304745398#304745399#0(0"0(0#0#62"/Users/jduggins/Dropbox/JCD-Portfolio/JCD_Portfolio_Prefix.pch8618759872#2007"    cd /Users/jduggins/Dropbox/JCD-Portfolio    setenv LANG en_US.US-ASCII    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -isysroot /DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-generated-files.hmap" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-own-target-headers.hmap" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-all-target-headers.hmap" -iquote "/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/JCD Portfolio-project-headers.hmap" -F/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator -F/Users/jduggins/Dropbox/JCD-Portfolio -I/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/include "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources/i386" "-I/Users/jduggins/Dropbox/JCD-Portfolio/build/JCD Portfolio.build/Debug-iphonesimulator/JCD Portfolio.build/DerivedSources" -c /Users/jduggins/Dropbox/JCD-Portfolio/JCD_Portfolio_Prefix.pch -o /var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-fyzpapahrsvncbcbubxmxpbyefip/JCD_Portfolio_Prefix.pch.pth0#
 
 CProcessPCH /var/folders/Yk/Ykhl2Hy2Hj4162Vh2wzbfFA9QF2/-Caches-/com.apple.Xcode.319516945/SharedPrecompiledHeaders/JCD_Portfolio_Prefix-fzwucvoeujeiivgfxhztbfgoggaf/JCD_Portfolio_Prefix.pch.gch JCD_Portfolio_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 s303530811.471488
@@ -848,4 +1540,12 @@ r1
 xTouch
 x/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app
 lSLF07#2@104"Touch /Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app303533707#303533707#0(0"0(0#0#0"8608010592#324"    cd "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio"    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/jduggins/Dropbox/Documents/Code/JCD Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app"0#
+
+CTouch "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app"
+s304746156.597093
+e304746156.599449
+r1
+xTouch
+x/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app
+lSLF07#2@89"Touch /Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app304746156#304746156#0(0"0(0#0#0"8632998848#292"    cd /Users/jduggins/Dropbox/JCD-Portfolio    setenv PATH "/DeveloperBeta/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/DeveloperBeta/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/jduggins/Dropbox/JCD-Portfolio/build/Debug-iphonesimulator/JCD Portfolio.app"0#
 

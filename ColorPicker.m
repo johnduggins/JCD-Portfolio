@@ -24,20 +24,15 @@
 	greenSlider = [[UISlider alloc] init];
 	alphaSlider = [[UISlider alloc] init];
 	
-	redSlider.minimumValue = 0;
-	blueSlider.minimumValue = 0;
-	greenSlider.minimumValue = 0;
+	redSlider.minimumValue = 0.0f;
+	blueSlider.minimumValue = 0.0f;
+	greenSlider.minimumValue = 0.0f;
 	alphaSlider.minimumValue = 0.0f;
 	
 	redSlider.maximumValue = 1.0f;
 	blueSlider.maximumValue = 1.0f;
 	greenSlider.maximumValue = 1.0f;
 	alphaSlider.maximumValue = 1.0f;
-	
-	redSlider.value = 0.0f;
-	blueSlider.value = 1.0f;
-	greenSlider.value = 0.0f;
-	alphaSlider.value = 1.0f;
 		
 	return self;
 }
@@ -69,6 +64,13 @@
 	[self.view addSubview:blueSlider];
 	[self.view addSubview:greenSlider];
 	[self.view addSubview:alphaSlider];
+	
+	[redSlider setValue:[PrimaryViewController redValue] animated:YES];
+	[blueSlider setValue:[PrimaryViewController blueValue] animated:YES];
+	[greenSlider setValue:[PrimaryViewController greenValue] animated:YES];
+	[alphaSlider setValue:[PrimaryViewController alphaValue] animated:YES];
+	
+	//NSLog(@"values are %f, %f, %f, %f", redValue, blueValue, greenValue, alphaValue);
 	
 }
 

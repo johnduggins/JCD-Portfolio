@@ -253,6 +253,7 @@
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "JCD Portfolio" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -368,7 +369,7 @@
 				PREBINDING = NO;
 				PROVISIONING_PROFILE = "E2234DFD-BE2F-42C7-BBC4-AA72E28C71DD";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E2234DFD-BE2F-42C7-BBC4-AA72E28C71DD";
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -388,7 +389,7 @@
 				PREBINDING = NO;
 				PROVISIONING_PROFILE = "E2234DFD-BE2F-42C7-BBC4-AA72E28C71DD";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E2234DFD-BE2F-42C7-BBC4-AA72E28C71DD";
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
