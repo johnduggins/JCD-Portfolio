@@ -16,8 +16,10 @@ static CGFloat blueValue;
 static CGFloat alphaValue;
 
 @interface PrimaryViewController : UIViewController {
-
+    int layoutItemCount;
 }
+
+@property (nonatomic) int layoutItemCount;
 
 -(BOOL)isVersion4;
 +(void)setRedValue:(CGFloat)red;

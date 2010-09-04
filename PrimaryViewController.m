@@ -11,6 +11,8 @@
 
 @implementation PrimaryViewController
 
+@synthesize layoutItemCount;
+
 +(void) initalize {
 	blueValue = [[[NSUserDefaults standardUserDefaults] objectForKey:@"blueBGColor"] floatValue];
 	greenValue = [[[NSUserDefaults standardUserDefaults] objectForKey:@"greenBGColor"] floatValue];
@@ -24,6 +26,8 @@
 	greenValue = [[[NSUserDefaults standardUserDefaults] objectForKey:@"greenBGColor"] floatValue];
 	redValue = [[[NSUserDefaults standardUserDefaults] objectForKey:@"redBGColor"] floatValue];
 	alphaValue = [[[NSUserDefaults standardUserDefaults] objectForKey:@"alphaBGColor"] floatValue];
+    
+    layoutItemCount = 0;
 	
 	return self;
 }

@@ -118,6 +118,8 @@
 	
 	self.accuracyCounter = 0;
 	self.bestAccuracy = 1000000;
+    
+    self.locManager.headingOrientation = [UIDevice currentDevice].orientation;
 	
 	return self;
 }
@@ -165,14 +167,19 @@
 		headingLabel.text = @"No Compass";
 	else if (!locManager.headingAvailable) headingLabel.text = @"No Compass";
 	
-	[self.view addSubview:self.longitudeLabel];
-	[self.view addSubview:self.latitudeLabel];
-	[self.view addSubview:self.headingLabel];
-	[self.view addSubview:self.speedLabel];
-	[self.view addSubview:self.startGPSButton];
-	[self.view addSubview:self.stopGPSButton];
+    [self loadButtonsAndLabels];
 	
 	NSLog(@"Buttons and Labels created");
+}
+
+-(void) loadButtonsAndLabels {
+    self.layoutItemCount = self.view.subviews.count;
+    [self.view addSubview:self.longitudeLabel]; self.layoutItemCount++;
+	[self.view addSubview:self.latitudeLabel]; self.layoutItemCount++;
+	[self.view addSubview:self.headingLabel]; self.layoutItemCount++;
+	[self.view addSubview:self.speedLabel]; self.layoutItemCount++;
+	[self.view addSubview:self.startGPSButton]; self.layoutItemCount++;
+	[self.view addSubview:self.stopGPSButton]; self.layoutItemCount++;
 }
 
 -(void) layoutButtonsAndLabels {
@@ -228,6 +235,8 @@
     } else {
 		NSLog(@"No idea how I got here");
 	}
+    
+    self.locManager.headingOrientation = toInterfaceOrientation;
 	
 	[UIView commitAnimations];
 }
@@ -305,7 +314,7 @@
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
-	NSLog(@"Low memory in the GPSTestViewController");
+	NSLog(@"Low memory in the GPS");
     [super didReceiveMemoryWarning];
     
     // Release any cached data, images, etc that aren't in use.
@@ -313,9 +322,13 @@
 
 -(void) viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
-	if (self.startGPSButton == nil || self.latitudeLabel == nil) {
-		[self createButtonsAndLabels];	
-	}
+	//if (self.startGPSButton == nil || self.latitudeLabel == nil) {
+		//[self createButtonsAndLabels];	
+	//}
+    
+    if (self.view.subviews.count < self.layoutItemCount) [self loadButtonsAndLabels];
+    
+    //NSLog(@"GPS view coming back into view");
     [self startGPS];
 }
 
@@ -331,7 +344,7 @@
 	
 	//[self stopGPS];
 	
-	NSLog(@"Unloading view from GPSTestViewController");
+	NSLog(@"Unloading view from GPS");
 	
     [super viewDidUnload];
     // Release any retained subviews of the main view.

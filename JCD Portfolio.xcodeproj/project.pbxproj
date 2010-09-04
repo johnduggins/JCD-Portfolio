@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1D3623260D0F684500981E51 /* AppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate_iPad.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
-		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		2819307D112F81BE00ECF9B4 /* JCD_Portfolio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2819307C112F81BE00ECF9B4 /* JCD_Portfolio.xcdatamodeld */; };
 		2860E38A111B897F00E27156 /* AppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E388111B897F00E27156 /* AppDelegate_iPhone.m */; };
@@ -17,7 +17,7 @@
 		28EEBFDD1118E19E00187D67 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EEBFDC1118E19E00187D67 /* CoreData.framework */; };
 		28EEC04B1118E28000187D67 /* AppDelegate_Shared.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EEC04A1118E28000187D67 /* AppDelegate_Shared.m */; };
 		99141C301222139200A2FF61 /* GPSTestMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99141C2F1222139200A2FF61 /* GPSTestMapViewController.m */; };
-		99141C3D122213AE00A2FF61 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99141C3C122213AE00A2FF61 /* MapKit.framework */; };
+		99141C3D122213AE00A2FF61 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99141C3C122213AE00A2FF61 /* MapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		991563C7121CB55700872180 /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 991563C6121CB55700872180 /* MapAnnotation.m */; };
 		99829196121796D8007F87EC /* PrimaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99829195121796D8007F87EC /* PrimaryViewController.m */; };
 		99829268121800FB007F87EC /* Five.png in Resources */ = {isa = PBXBuildFile; fileRef = 99829262121800FB007F87EC /* Five.png */; };
@@ -335,6 +335,8 @@
 				GCC_PREFIX_HEADER = JCD_Portfolio_Prefix.pch;
 				INFOPLIST_FILE = "JCD_Portfolio-Info.plist";
 				PRODUCT_NAME = "JCD Portfolio";
+				SDKROOT = iphoneos4.1;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
 		};
@@ -351,6 +353,7 @@
 				GCC_PREFIX_HEADER = JCD_Portfolio_Prefix.pch;
 				INFOPLIST_FILE = "JCD_Portfolio-Info.plist";
 				PRODUCT_NAME = "JCD Portfolio";
+				SDKROOT = iphoneos4.1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -362,7 +365,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: John Duggins (939F694R86)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: John Duggins (939F694R86)";
 				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
@@ -381,7 +384,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: John Duggins (939F694R86)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: John Duggins (939F694R86)";
 				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;

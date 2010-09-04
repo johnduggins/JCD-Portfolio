@@ -280,8 +280,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 304998813;
-			PBXWorkspaceStateSaveDate = 304998813;
+			PBXPerProjectTemplateStateSaveDate = 305077424;
+			PBXWorkspaceStateSaveDate = 305077424;
 		};
 		perUserProjectItems = {
 			99141BDE1222113400A2FF61 /* PBXTextBookmark */ = 99141BDE1222113400A2FF61 /* PBXTextBookmark */;
@@ -300,12 +300,12 @@
 			99670562122DEFC2003EF5BA /* PBXTextBookmark */ = 99670562122DEFC2003EF5BA /* PBXTextBookmark */;
 			99670563122DEFC2003EF5BA /* PBXTextBookmark */ = 99670563122DEFC2003EF5BA /* PBXTextBookmark */;
 			99670564122DEFC2003EF5BA /* PBXTextBookmark */ = 99670564122DEFC2003EF5BA /* PBXTextBookmark */;
-			99670565122DEFC2003EF5BA /* PBXTextBookmark */ = 99670565122DEFC2003EF5BA /* PBXTextBookmark */;
 			99670578122DF17D003EF5BA /* PBXTextBookmark */ = 99670578122DF17D003EF5BA /* PBXTextBookmark */;
 			9982915B12178EC0007F87EC /* PBXTextBookmark */ = 9982915B12178EC0007F87EC /* PBXTextBookmark */;
 			9982917B1217955B007F87EC /* PBXBookmark */ = 9982917B1217955B007F87EC /* PBXBookmark */;
 			999575351221FDEB002F54B0 /* PBXTextBookmark */ = 999575351221FDEB002F54B0 /* PBXTextBookmark */;
 			999575361221FDEB002F54B0 /* PBXTextBookmark */ = 999575361221FDEB002F54B0 /* PBXTextBookmark */;
+			99C73EEB122F877D006640C7 /* PBXTextBookmark */ = 99C73EEB122F877D006640C7 /* PBXTextBookmark */;
 			99E628E51221B79F00BB7217 /* PBXTextBookmark */ = 99E628E51221B79F00BB7217 /* PBXTextBookmark */;
 			99E628E81221B79F00BB7217 /* PBXTextBookmark */ = 99E628E81221B79F00BB7217 /* PBXTextBookmark */;
 			99F672A71217833D0005091E /* PBXBookmark */ = 99F672A71217833D0005091E /* PBXBookmark */;
@@ -367,8 +367,8 @@
 	};
 	99141C2F1222139200A2FF61 /* GPSTestMapViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1041, 2496}}";
-			sepNavSelRange = "{4306, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {985, 2535}}";
+			sepNavSelRange = "{3720, 0}";
 			sepNavVisRange = "{3512, 949}";
 		};
 	};
@@ -509,16 +509,6 @@
 		vrLen = 845;
 		vrLoc = 3;
 	};
-	99670565122DEFC2003EF5BA /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 99141C2F1222139200A2FF61 /* GPSTestMapViewController.m */;
-		name = "GPSTestMapViewController.m: 120";
-		rLen = 0;
-		rLoc = 4341;
-		rType = 0;
-		vrLen = 930;
-		vrLoc = 3512;
-	};
 	99670578122DF17D003EF5BA /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 99141C2F1222139200A2FF61 /* GPSTestMapViewController.m */;
@@ -633,6 +623,16 @@
 		rType = 0;
 		vrLen = 231;
 		vrLoc = 0;
+	};
+	99C73EEB122F877D006640C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 99141C2F1222139200A2FF61 /* GPSTestMapViewController.m */;
+		name = "GPSTestMapViewController.m: 107";
+		rLen = 0;
+		rLoc = 3720;
+		rType = 0;
+		vrLen = 949;
+		vrLoc = 3512;
 	};
 	99E628E51221B79F00BB7217 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;

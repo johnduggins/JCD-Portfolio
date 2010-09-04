@@ -62,6 +62,7 @@
 -(void)createButtonsAndLabels;
 -(void)moveUIElementsPortrait;
 -(void)moveUIElementsLandscape;
+-(void) loadButtonsAndLabels;
 -(void)layoutButtonsAndLabels;
 
 @end
