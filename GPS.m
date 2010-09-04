@@ -149,7 +149,7 @@
 	//startGPSButton.tag = GPSSTARTBUTTON;
 	//stopGPSButton.tag = GPSSTOPBUTTON;
 	
-	[self moveUIElementsPortrait];
+	//[self moveUIElements];
 	
 	[self.startGPSButton addTarget:self action:@selector(startGPS) forControlEvents: UIControlEventTouchUpInside];
 	[self.stopGPSButton addTarget:self action:@selector(stopGPS) forControlEvents: UIControlEventTouchUpInside];
@@ -160,7 +160,7 @@
 	self.speedLabel.textAlignment = UITextAlignmentCenter;
 	
 	[self layoutButtonsAndLabels];
-	[self moveUIElementsPortrait];
+	[self moveUIElements];
 	
 	if (([CLLocationManager respondsToSelector:@selector(headingAvailable)]) &&
 		(![CLLocationManager headingAvailable]))
@@ -191,26 +191,76 @@
 	self.stopGPSButton.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);	
 }
 
--(void) moveUIElementsPortrait {	
-	self.startGPSButton.center = CGPointMake(80.0f, 60.0f);
-	self.stopGPSButton.center = CGPointMake(240.0f, 60.0f);
+/*-(void) moveUIElementsPortrait {	
+
+    
+    int width = [UIScreen mainScreen].bounds.size.width;
+
+	int availableWidth = width - startGPSButton.bounds.size.width - stopGPSButton.bounds.size.width;
+    int wBuffer = availableWidth/2;
+    if (wBuffer > 60) wBuffer = 60;
+    int topBuffer = 30;
+    int hBuffer = ([UIScreen mainScreen].bounds.size.height - 100)/6;
+    startGPSButton.center = CGPointMake(width/2 - wBuffer*2, topBuffer);
+    stopGPSButton.center = CGPointMake(width/2 + wBuffer*2, topBuffer);
 	
-	self.longitudeLabel.center = CGPointMake(80.0f, 120.0f);
-	self.latitudeLabel.center = CGPointMake(240.0f, 120.0f);
+	self.longitudeLabel.center = CGPointMake(width/2 - wBuffer*2, topBuffer+hBuffer);
+	self.latitudeLabel.center = CGPointMake(width/2 + wBuffer*2, topBuffer+hBuffer);
 	
-	self.speedLabel.center = CGPointMake(80.0f, 180.0f);
-	self.headingLabel.center = CGPointMake(240.0f, 180.0f);	
+	self.speedLabel.center = CGPointMake(width/2 - wBuffer*2, topBuffer+hBuffer*2);
+	self.headingLabel.center = CGPointMake(width/2 + wBuffer*2, topBuffer+hBuffer*2);
 }
 
 -(void) moveUIElementsLandscape {
-	self.startGPSButton.center = CGPointMake(160.0f, 60.0f);
-	self.stopGPSButton.center = CGPointMake(320.0f, 60.0f);
+
+    int width = [UIScreen mainScreen].bounds.size.height;
+    
+    int availableWidth = width - startGPSButton.bounds.size.width - stopGPSButton.bounds.size.width;
+    int buffer = availableWidth/2;
+    if (buffer > 60) buffer = 60;
+    int topBuffer = 30;
+    int hBuffer = ([UIScreen mainScreen].bounds.size.width - startGPSButton.bounds.size.height - stopGPSButton.bounds.size.height)/3.5;
+    startGPSButton.center = CGPointMake(width/2 - buffer*2, topBuffer);
+    stopGPSButton.center = CGPointMake(width/2 + buffer*2, topBuffer);
 	
-	self.longitudeLabel.center = CGPointMake(160.0f, 120.0f);
-	self.latitudeLabel.center = CGPointMake(320.0f, 120.0f);
+	self.longitudeLabel.center = CGPointMake(width/2 - buffer*2, topBuffer+hBuffer);
+	self.latitudeLabel.center = CGPointMake(width/2 + buffer*2, topBuffer+hBuffer);
 	
-	self.speedLabel.center = CGPointMake(160.0f, 180.0f);
-	self.headingLabel.center = CGPointMake(320.0f, 180.0f);	
+	self.speedLabel.center = CGPointMake(width/2 - buffer*2, topBuffer+hBuffer*2);
+	self.headingLabel.center = CGPointMake(width/2 + buffer*2, topBuffer+hBuffer*2);
+}*/
+
+- (void)moveUIElements {
+    int width;
+    int height;
+    int heightFactor;
+    if ([UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeLeft 
+		|| [UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeRight) {
+        height = [UIScreen mainScreen].bounds.size.width;
+        width = [UIScreen mainScreen].bounds.size.height;
+        heightFactor = 3.5;
+        NSLog(@"moving UI elements to landscape");
+    } else {
+        width = [UIScreen mainScreen].bounds.size.width;
+        height = [UIScreen mainScreen].bounds.size.height;
+        heightFactor = 6;
+        NSLog(@"moving UI elements to portrait");
+    }
+    
+    int wBuffer = (width - startGPSButton.bounds.size.width - stopGPSButton.bounds.size.width)/2;
+    int hBuffer = (height - startGPSButton.bounds.size.height - stopGPSButton.bounds.size.height)/heightFactor;
+    if (wBuffer > 60) wBuffer = 60;
+    int topBuffer = 30;
+    
+    startGPSButton.center = CGPointMake(width/2 - wBuffer*2, topBuffer);
+    stopGPSButton.center = CGPointMake(width/2 + wBuffer*2, topBuffer);
+	
+	self.longitudeLabel.center = CGPointMake(width/2 - wBuffer*2, topBuffer+hBuffer);
+	self.latitudeLabel.center = CGPointMake(width/2 + wBuffer*2, topBuffer+hBuffer);
+	
+	self.speedLabel.center = CGPointMake(width/2 - wBuffer*2, topBuffer+hBuffer*2);
+	self.headingLabel.center = CGPointMake(width/2 + wBuffer*2, topBuffer+hBuffer*2);
+
 }
 
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
@@ -220,7 +270,7 @@
 	[UIView beginAnimations:@"moveButtons" context:nil];
 	[UIView setAnimationDuration:0.3];
 	
-	if ([UIDevice currentDevice].orientation == UIInterfaceOrientationPortrait 
+	/*if ([UIDevice currentDevice].orientation == UIInterfaceOrientationPortrait 
 		|| [UIDevice currentDevice].orientation == UIInterfaceOrientationPortraitUpsideDown) {
 		//|| self.interfaceOrientation == UIInterfaceOrientationPortrait 
 		//|| self.interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
@@ -234,7 +284,8 @@
 		[self moveUIElementsLandscape];
     } else {
 		NSLog(@"No idea how I got here");
-	}
+	}*/
+    [self moveUIElements];
     
     self.locManager.headingOrientation = toInterfaceOrientation;
 	
@@ -327,6 +378,7 @@
 	//}
     
     if (self.view.subviews.count < self.layoutItemCount) [self loadButtonsAndLabels];
+    [self moveUIElements];
     
     //NSLog(@"GPS view coming back into view");
     [self startGPS];

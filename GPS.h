@@ -60,8 +60,9 @@
 -(void)stopGPS;
 //-(void)displayMap;
 -(void)createButtonsAndLabels;
--(void)moveUIElementsPortrait;
--(void)moveUIElementsLandscape;
+-(void)moveUIElements;
+//-(void)moveUIElementsPortrait;
+//-(void)moveUIElementsLandscape;
 -(void) loadButtonsAndLabels;
 -(void)layoutButtonsAndLabels;
 
