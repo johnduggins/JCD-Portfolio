@@ -25,5 +25,6 @@
 @property (nonatomic, retain) UISlider *alphaSlider;
 
 -(void)updateBackground;
+-(void)layoutControllers;
 
 @end

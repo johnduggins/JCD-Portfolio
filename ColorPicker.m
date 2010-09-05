@@ -33,6 +33,8 @@
 	blueSlider.maximumValue = 1.0f;
 	greenSlider.maximumValue = 1.0f;
 	alphaSlider.maximumValue = 1.0f;
+    
+    [self layoutControllers];
 		
 	return self;
 }
@@ -40,16 +42,7 @@
 - (void) loadView {
 	[super loadView];
 	
-	redSlider.frame = CGRectMake(0,0, 200, redSlider.frame.size.height);
-	blueSlider.frame = CGRectMake(0,0, 200, redSlider.frame.size.height);
-	greenSlider.frame = CGRectMake(0,0, 200, redSlider.frame.size.height);
-	alphaSlider.frame = CGRectMake(0,0, 200, redSlider.frame.size.height);
-	
-	CGPoint myApplicationCenter = self.view.center;
-	redSlider.center = CGPointMake(myApplicationCenter.x, 75);
-	blueSlider.center = CGPointMake(myApplicationCenter.x, 275);
-	greenSlider.center = CGPointMake(myApplicationCenter.x, 175);
-	alphaSlider.center = CGPointMake(myApplicationCenter.x, 375);
+	[self layoutControllers];
 	
 	[redSlider addTarget:self action:@selector(updateBackground) 
         forControlEvents: UIControlEventTouchDown+UIControlEventTouchDragInside+UIControlEventTouchDragOutside+UIControlEventTouchUpInside+UIControlEventTouchUpOutside];
@@ -72,6 +65,46 @@
 	
 	//NSLog(@"values are %f, %f, %f, %f", redValue, blueValue, greenValue, alphaValue);
 	
+}
+
+- (void) layoutControllers {
+    
+    if ([UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeLeft 
+		|| [UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeRight) {
+        redSlider.frame = CGRectMake(0,0, 200, 30);
+        blueSlider.frame = CGRectMake(0,0, 200, redSlider.frame.size.height);
+        greenSlider.frame = CGRectMake(0,0, 200, redSlider.frame.size.height);
+        alphaSlider.frame = CGRectMake(0,0, 200, redSlider.frame.size.height);
+        
+        CGPoint myApplicationCenter = self.view.center;
+        redSlider.center = CGPointMake(myApplicationCenter.x+100, 75);
+        blueSlider.center = CGPointMake(myApplicationCenter.x-100, 75);
+        greenSlider.center = CGPointMake(myApplicationCenter.x+100, 225);
+        alphaSlider.center = CGPointMake(myApplicationCenter.x-100, 225);
+
+        
+    } else {
+        redSlider.frame = CGRectMake(0,0, 100, 30);
+        blueSlider.frame = CGRectMake(0,0, 100, redSlider.frame.size.height);
+        greenSlider.frame = CGRectMake(0,0, 100, redSlider.frame.size.height);
+        alphaSlider.frame = CGRectMake(0,0, 100, redSlider.frame.size.height);
+        
+        CGPoint myApplicationCenter = self.view.center;
+        redSlider.center = CGPointMake(myApplicationCenter.x, 75);
+        blueSlider.center = CGPointMake(myApplicationCenter.x, 275);
+        greenSlider.center = CGPointMake(myApplicationCenter.x, 175);
+        alphaSlider.center = CGPointMake(myApplicationCenter.x, 375);
+    }
+    
+}
+
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+    [UIView beginAnimations:@"moveSliders" context:nil];
+	[UIView setAnimationDuration:0.3];
+    
+    [self layoutControllers];
+    
+    [UIView commitAnimations];
 }
 
 - (void) updateBackground {
