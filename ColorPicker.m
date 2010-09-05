@@ -33,16 +33,17 @@
 	blueSlider.maximumValue = 1.0f;
 	greenSlider.maximumValue = 1.0f;
 	alphaSlider.maximumValue = 1.0f;
-    
-    [self layoutControllers];
 		
 	return self;
 }
 
 - (void) loadView {
 	[super loadView];
-	
-	[self layoutControllers];
+    
+    self.redSlider.frame = CGRectMake(0,0, 100, 30);
+    self.greenSlider.frame = CGRectMake(0,0, 100, redSlider.frame.size.height);
+    self.blueSlider.frame = CGRectMake(0,0, 100, redSlider.frame.size.height);
+    self.alphaSlider.frame = CGRectMake(0,0, 100, redSlider.frame.size.height);
 	
 	[redSlider addTarget:self action:@selector(updateBackground) 
         forControlEvents: UIControlEventTouchDown+UIControlEventTouchDragInside+UIControlEventTouchDragOutside+UIControlEventTouchUpInside+UIControlEventTouchUpOutside];
@@ -69,36 +70,55 @@
 
 - (void) layoutControllers {
     
+    int hCenter = self.view.frame.size.width/2;
+    //int tmp = self.view.frame.origin.x;
+    
     if ([UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeLeft 
 		|| [UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeRight) {
-        redSlider.frame = CGRectMake(0,0, 200, 30);
-        blueSlider.frame = CGRectMake(0,0, 200, redSlider.frame.size.height);
-        greenSlider.frame = CGRectMake(0,0, 200, redSlider.frame.size.height);
-        alphaSlider.frame = CGRectMake(0,0, 200, redSlider.frame.size.height);
         
-        CGPoint myApplicationCenter = self.view.center;
-        redSlider.center = CGPointMake(myApplicationCenter.x+100, 75);
-        blueSlider.center = CGPointMake(myApplicationCenter.x-100, 75);
-        greenSlider.center = CGPointMake(myApplicationCenter.x+100, 225);
-        alphaSlider.center = CGPointMake(myApplicationCenter.x-100, 225);
+        NSLog(@"Landscape sliders: %d", hCenter);        
+        
+        self.redSlider.frame = CGRectMake(self.redSlider.frame.origin.x, self.redSlider.frame.origin.y,200,30);
+        self.greenSlider.frame = CGRectMake(self.greenSlider.frame.origin.x, self.greenSlider.frame.origin.y,200,30);
+        self.blueSlider.frame = CGRectMake(self.blueSlider.frame.origin.x, self.blueSlider.frame.origin.y,200,30);
+        self.alphaSlider.frame = CGRectMake(self.alphaSlider.frame.origin.x, self.alphaSlider.frame.origin.y,200,30);
+        
+        self.redSlider.center = CGPointMake(hCenter-100, 75);
+        self.greenSlider.center = CGPointMake(hCenter+100, 75);
+        self.blueSlider.center = CGPointMake(hCenter-100, 225);
+        self.alphaSlider.center = CGPointMake(hCenter+100, 225);
 
-        
     } else {
-        redSlider.frame = CGRectMake(0,0, 100, 30);
-        blueSlider.frame = CGRectMake(0,0, 100, redSlider.frame.size.height);
-        greenSlider.frame = CGRectMake(0,0, 100, redSlider.frame.size.height);
-        alphaSlider.frame = CGRectMake(0,0, 100, redSlider.frame.size.height);
         
-        CGPoint myApplicationCenter = self.view.center;
-        redSlider.center = CGPointMake(myApplicationCenter.x, 75);
-        blueSlider.center = CGPointMake(myApplicationCenter.x, 275);
-        greenSlider.center = CGPointMake(myApplicationCenter.x, 175);
-        alphaSlider.center = CGPointMake(myApplicationCenter.x, 375);
+        NSLog(@"Portrait sliders: %d", hCenter);
+        
+        self.redSlider.frame = CGRectMake(self.redSlider.frame.origin.x, self.redSlider.frame.origin.y,100,30);
+        self.greenSlider.frame = CGRectMake(self.greenSlider.frame.origin.x, self.greenSlider.frame.origin.y,100,30);
+        self.blueSlider.frame = CGRectMake(self.blueSlider.frame.origin.x, self.blueSlider.frame.origin.y,100,30);
+        self.alphaSlider.frame = CGRectMake(self.alphaSlider.frame.origin.x, self.alphaSlider.frame.origin.y,100,30);
+        
+        self.redSlider.center = CGPointMake(hCenter-100, 75);
+        self.greenSlider.center = CGPointMake(hCenter+100, 75);
+        self.blueSlider.center = CGPointMake(hCenter-100, 225);
+        self.alphaSlider.center = CGPointMake(hCenter+100, 225);
+        
     }
     
 }
 
-- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+-(void) viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+    
+    [UIView beginAnimations:@"moveSliders" context:nil];
+	[UIView setAnimationDuration:0.3];
+    
+    [self layoutControllers];
+    
+    [UIView commitAnimations];
+}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    
     [UIView beginAnimations:@"moveSliders" context:nil];
 	[UIView setAnimationDuration:0.3];
     
