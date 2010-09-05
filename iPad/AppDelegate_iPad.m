@@ -20,18 +20,18 @@
 	//return [super application:application didFinishLaunchingWithOptions:launchOptions];
 	
 	ColorPicker *myFirstViewController = [[ColorPicker alloc] init];
-	myFirstViewController.title = @"One";
-	NSString *path = [[NSBundle mainBundle] pathForResource:myFirstViewController.title ofType:@"png"];
-	[myFirstViewController.tabBarItem initWithTitle:myFirstViewController.title
-											  image:[[UIImage alloc] initWithContentsOfFile:path] tag:0];
+	myFirstViewController.title = @"BGColor Picker";
+    UINavigationController *navColorPicker = [[UINavigationController alloc] initWithRootViewController:myFirstViewController];
+    navColorPicker.navigationBar.barStyle = UIBarStyleBlack;
+	NSString *path = [[NSBundle mainBundle] pathForResource:@"One" ofType:@"png"];
+	[navColorPicker.tabBarItem initWithTitle:@"BGColor" image:[[UIImage alloc] initWithContentsOfFile:path] tag:0];
     
     GPS_iPad *mySecondViewController = [[GPS_iPad alloc] init];
-	mySecondViewController.title = @"Two";
-	UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mySecondViewController];
-	nav.navigationBar.barStyle = UIBarStyleBlack;
-    nav.title = @"Two";
-    path = [[NSBundle mainBundle] pathForResource:nav.title ofType:@"png"];
-    [nav.tabBarItem initWithTitle:nav.title image:[[UIImage alloc] initWithContentsOfFile:path] tag:0];
+	mySecondViewController.title = @"GPS Info";
+	UINavigationController *navGPS = [[UINavigationController alloc] initWithRootViewController:mySecondViewController];
+	navGPS.navigationBar.barStyle = UIBarStyleBlack;
+    path = [[NSBundle mainBundle] pathForResource:@"Two" ofType:@"png"];
+    [navGPS.tabBarItem initWithTitle:@"GPS" image:[[UIImage alloc] initWithContentsOfFile:path] tag:0];
 	
 	PrimaryViewController *myThirdViewController = [[PrimaryViewController alloc] init];
 	myThirdViewController.title = @"Three";
@@ -39,12 +39,13 @@
 	[myThirdViewController.tabBarItem initWithTitle:myThirdViewController.title
 											  image:[[UIImage alloc] initWithContentsOfFile:path] tag:0];
 	
-	NSArray *tbarArray = [NSArray arrayWithObjects:myFirstViewController, nav, myThirdViewController, nil];
+	NSArray *tbarArray = [NSArray arrayWithObjects:navColorPicker, navGPS, myThirdViewController, nil];
     
     [myFirstViewController release];
 	[mySecondViewController release];
     [myThirdViewController release];
-	[nav release];
+	[navColorPicker release];
+    [navGPS release];
 	
 	UITabBarController *tbarController = [[UITabBarController alloc] init];
 	tbarController.viewControllers = tbarArray;

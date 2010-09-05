@@ -127,13 +127,13 @@
         
         self.redSlider.center = CGPointMake(hCenter-offCenter, 75);
         self.greenSlider.center = CGPointMake(hCenter+offCenter, 75);
-        self.blueSlider.center = CGPointMake(hCenter-offCenter, 225);
-        self.alphaSlider.center = CGPointMake(hCenter+offCenter, 225);
+        self.blueSlider.center = CGPointMake(hCenter-offCenter, 155);
+        self.alphaSlider.center = CGPointMake(hCenter+offCenter, 155);
         
         self.redLabel.center = CGPointMake(hCenter-offCenter, 35);
         self.greenLabel.center = CGPointMake(hCenter+offCenter, 35);
-        self.blueLabel.center = CGPointMake(hCenter-offCenter, 185);
-        self.alphaLabel.center = CGPointMake(hCenter+offCenter, 185);
+        self.blueLabel.center = CGPointMake(hCenter-offCenter, 115);
+        self.alphaLabel.center = CGPointMake(hCenter+offCenter, 115);
 
     } else {
         
