@@ -36,6 +36,8 @@
     [super viewDidLoad];
 	
 	self.navigationItem.rightBarButtonItem = BARBUTTON(@"Map", @selector(displayMap));
+    
+    [self moveUIElements];
 }
 
 - (void) loadView {
@@ -146,11 +148,6 @@
 	[self.stopGPSButton setTitle:@"Pause GPS" forState: UIControlStateNormal];
 	self.stopGPSButton.titleLabel.font = [UIFont boldSystemFontOfSize:18.0f];
 	
-	//startGPSButton.tag = GPSSTARTBUTTON;
-	//stopGPSButton.tag = GPSSTOPBUTTON;
-	
-	//[self moveUIElements];
-	
 	[self.startGPSButton addTarget:self action:@selector(startGPS) forControlEvents: UIControlEventTouchUpInside];
 	[self.stopGPSButton addTarget:self action:@selector(stopGPS) forControlEvents: UIControlEventTouchUpInside];
 	
@@ -191,49 +188,12 @@
 	self.stopGPSButton.frame = CGRectMake(0.0f, 0.0f, 120.0f, 50.0f);	
 }
 
-/*-(void) moveUIElementsPortrait {	
-
-    
-    int width = [UIScreen mainScreen].bounds.size.width;
-
-	int availableWidth = width - startGPSButton.bounds.size.width - stopGPSButton.bounds.size.width;
-    int wBuffer = availableWidth/2;
-    if (wBuffer > 60) wBuffer = 60;
-    int topBuffer = 30;
-    int hBuffer = ([UIScreen mainScreen].bounds.size.height - 100)/6;
-    startGPSButton.center = CGPointMake(width/2 - wBuffer*2, topBuffer);
-    stopGPSButton.center = CGPointMake(width/2 + wBuffer*2, topBuffer);
-	
-	self.longitudeLabel.center = CGPointMake(width/2 - wBuffer*2, topBuffer+hBuffer);
-	self.latitudeLabel.center = CGPointMake(width/2 + wBuffer*2, topBuffer+hBuffer);
-	
-	self.speedLabel.center = CGPointMake(width/2 - wBuffer*2, topBuffer+hBuffer*2);
-	self.headingLabel.center = CGPointMake(width/2 + wBuffer*2, topBuffer+hBuffer*2);
-}
-
--(void) moveUIElementsLandscape {
-
-    int width = [UIScreen mainScreen].bounds.size.height;
-    
-    int availableWidth = width - startGPSButton.bounds.size.width - stopGPSButton.bounds.size.width;
-    int buffer = availableWidth/2;
-    if (buffer > 60) buffer = 60;
-    int topBuffer = 30;
-    int hBuffer = ([UIScreen mainScreen].bounds.size.width - startGPSButton.bounds.size.height - stopGPSButton.bounds.size.height)/3.5;
-    startGPSButton.center = CGPointMake(width/2 - buffer*2, topBuffer);
-    stopGPSButton.center = CGPointMake(width/2 + buffer*2, topBuffer);
-	
-	self.longitudeLabel.center = CGPointMake(width/2 - buffer*2, topBuffer+hBuffer);
-	self.latitudeLabel.center = CGPointMake(width/2 + buffer*2, topBuffer+hBuffer);
-	
-	self.speedLabel.center = CGPointMake(width/2 - buffer*2, topBuffer+hBuffer*2);
-	self.headingLabel.center = CGPointMake(width/2 + buffer*2, topBuffer+hBuffer*2);
-}*/
-
 - (void)moveUIElements {
+    
     int width;
     int height;
     int heightFactor;
+    
     if ([UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeLeft 
 		|| [UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeRight) {
         height = [UIScreen mainScreen].bounds.size.width;
@@ -260,36 +220,25 @@
 	
 	self.speedLabel.center = CGPointMake(width/2 - wBuffer*2, topBuffer+hBuffer*2);
 	self.headingLabel.center = CGPointMake(width/2 + wBuffer*2, topBuffer+hBuffer*2);
+    
+    self.locManager.headingOrientation = [UIDevice currentDevice].orientation;
 
 }
 
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
-	//UIButton *startGPSButton = (UIButton *)[self.view.window viewWithTag:GPSSTARTBUTTON];
-	//UIButton *stopGPSButton = (UIButton *)[self.view.window viewWithTag:GPSSTOPBUTTON];
 	
 	[UIView beginAnimations:@"moveButtons" context:nil];
 	[UIView setAnimationDuration:0.3];
 	
-	/*if ([UIDevice currentDevice].orientation == UIInterfaceOrientationPortrait 
-		|| [UIDevice currentDevice].orientation == UIInterfaceOrientationPortraitUpsideDown) {
-		//|| self.interfaceOrientation == UIInterfaceOrientationPortrait 
-		//|| self.interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
-        NSLog(@"in portrait mode");
-		[self moveUIElementsPortrait];
-    } else if ([UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeLeft
-			   || [UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeRight) {
-			   //|| self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft
-			   //|| self.interfaceOrientation == UIInterfaceOrientationLandscapeRight) {
-        NSLog(@"in landscape mode");
-		[self moveUIElementsLandscape];
-    } else {
-		NSLog(@"No idea how I got here");
-	}*/
     [self moveUIElements];
     
-    self.locManager.headingOrientation = toInterfaceOrientation;
+    //self.locManager.headingOrientation = toInterfaceOrientation;
 	
 	[UIView commitAnimations];
+}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+    self.locManager.headingOrientation = [UIDevice currentDevice].orientation;
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
@@ -360,7 +309,7 @@
 }
 
 - (BOOL)locationManagerShouldDisplayHeadingCalibration:(CLLocationManager *)manager {
-	return YES;	
+	return NO;	
 }
 
 - (void)didReceiveMemoryWarning {
@@ -373,15 +322,18 @@
 
 -(void) viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
-	//if (self.startGPSButton == nil || self.latitudeLabel == nil) {
-		//[self createButtonsAndLabels];	
-	//}
     
     if (self.view.subviews.count < self.layoutItemCount) [self loadButtonsAndLabels];
     [self moveUIElements];
     
+    
     //NSLog(@"GPS view coming back into view");
     [self startGPS];
+}
+
+-(void) viewDidAppear:(BOOL)animated {
+    self.locManager.headingOrientation = [UIDevice currentDevice].orientation;
+    
 }
 
 - (void) viewWillDisappear:(BOOL)animated {
@@ -390,11 +342,6 @@
 }
 
 - (void)viewDidUnload {
-	
-	//[self.locManager stopUpdatingLocation];
-	//if ([CLLocationManager headingAvailable]) [self.locManager stopUpdatingHeading];
-	
-	//[self stopGPS];
 	
 	NSLog(@"Unloading view from GPS");
 	
@@ -411,8 +358,8 @@
 	[longitudeLabel release];
 	[headingLabel release];
 	[speedLabel release];
-	//[startGPSButton release];
-	//[stopGPSButton release];
+	[startGPSButton release];
+	[stopGPSButton release];
     [super dealloc];
 }
 
