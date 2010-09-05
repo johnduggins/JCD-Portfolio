@@ -15,6 +15,10 @@
 @synthesize blueSlider;
 @synthesize greenSlider;
 @synthesize alphaSlider;
+@synthesize redLabel;
+@synthesize greenLabel;
+@synthesize blueLabel;
+@synthesize alphaLabel;
 
 - (id) init {
 	self = [super init];
@@ -23,6 +27,15 @@
 	blueSlider = [[UISlider alloc] init];
 	greenSlider = [[UISlider alloc] init];
 	alphaSlider = [[UISlider alloc] init];
+    
+    //redLabel = [[UIButton alloc] init];
+    redLabel = [[UIButton buttonWithType:UIButtonTypeRoundedRect] retain];
+    greenLabel = [[UIButton buttonWithType:UIButtonTypeRoundedRect] retain];
+    blueLabel = [[UIButton buttonWithType:UIButtonTypeRoundedRect] retain];
+    alphaLabel = [[UIButton buttonWithType:UIButtonTypeRoundedRect] retain];
+    //greenLabel = [[UILabel alloc] init];
+    //blueLabel = [[UILabel alloc] init];
+    //alphaLabel = [[UILabel alloc] init];
 	
 	redSlider.minimumValue = 0.0f;
 	blueSlider.minimumValue = 0.0f;
@@ -33,6 +46,24 @@
 	blueSlider.maximumValue = 1.0f;
 	greenSlider.maximumValue = 1.0f;
 	alphaSlider.maximumValue = 1.0f;
+    
+    redLabel.enabled = FALSE;
+    greenLabel.enabled = FALSE;
+    blueLabel.enabled = FALSE;
+    alphaLabel.enabled = FALSE;
+    
+    [redLabel setBackgroundColor:[UIColor redColor]];
+    [redLabel setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [greenLabel setBackgroundColor:[UIColor greenColor]];
+    [greenLabel setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+    [blueLabel setBackgroundColor:[UIColor blueColor]];
+    [blueLabel setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [alphaLabel setBackgroundColor:[UIColor clearColor]];
+    
+    [redLabel setTitle:@"Red Value" forState:UIControlStateNormal];
+    [greenLabel setTitle:@"Green Value" forState:UIControlStateNormal];
+    [blueLabel setTitle:@"Blue Value" forState:UIControlStateNormal];
+    [alphaLabel setTitle:@"Alpha Value" forState:UIControlStateNormal];
 		
 	return self;
 }
@@ -44,6 +75,11 @@
     self.greenSlider.frame = CGRectMake(0,0, 100, redSlider.frame.size.height);
     self.blueSlider.frame = CGRectMake(0,0, 100, redSlider.frame.size.height);
     self.alphaSlider.frame = CGRectMake(0,0, 100, redSlider.frame.size.height);
+    
+    self.redLabel.frame = CGRectMake(0, 0, 100, 30);
+    self.greenLabel.frame = CGRectMake(0, 0, 100, 30);
+    self.blueLabel.frame = CGRectMake(0, 0, 100, 30);
+    self.alphaLabel.frame = CGRectMake(0, 0, 100, 30);
 	
 	[redSlider addTarget:self action:@selector(updateBackground) 
         forControlEvents: UIControlEventTouchDown+UIControlEventTouchDragInside+UIControlEventTouchDragOutside+UIControlEventTouchUpInside+UIControlEventTouchUpOutside];
@@ -58,6 +94,10 @@
 	[self.view addSubview:blueSlider];
 	[self.view addSubview:greenSlider];
 	[self.view addSubview:alphaSlider];
+    [self.view addSubview:redLabel];
+    [self.view addSubview:greenLabel];
+    [self.view addSubview:blueLabel];
+    [self.view addSubview:alphaLabel];
 	
 	[redSlider setValue:[PrimaryViewController redValue] animated:YES];
 	[blueSlider setValue:[PrimaryViewController blueValue] animated:YES];
@@ -71,6 +111,8 @@
 - (void) layoutControllers {
     
     int hCenter = self.view.frame.size.width/2;
+    int offCenter = 100;
+    if (hCenter > 300) offCenter *= 2;
     //int tmp = self.view.frame.origin.x;
     
     if ([UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeLeft 
@@ -83,10 +125,15 @@
         self.blueSlider.frame = CGRectMake(self.blueSlider.frame.origin.x, self.blueSlider.frame.origin.y,200,30);
         self.alphaSlider.frame = CGRectMake(self.alphaSlider.frame.origin.x, self.alphaSlider.frame.origin.y,200,30);
         
-        self.redSlider.center = CGPointMake(hCenter-100, 75);
-        self.greenSlider.center = CGPointMake(hCenter+100, 75);
-        self.blueSlider.center = CGPointMake(hCenter-100, 225);
-        self.alphaSlider.center = CGPointMake(hCenter+100, 225);
+        self.redSlider.center = CGPointMake(hCenter-offCenter, 75);
+        self.greenSlider.center = CGPointMake(hCenter+offCenter, 75);
+        self.blueSlider.center = CGPointMake(hCenter-offCenter, 225);
+        self.alphaSlider.center = CGPointMake(hCenter+offCenter, 225);
+        
+        self.redLabel.center = CGPointMake(hCenter-offCenter, 35);
+        self.greenLabel.center = CGPointMake(hCenter+offCenter, 35);
+        self.blueLabel.center = CGPointMake(hCenter-offCenter, 185);
+        self.alphaLabel.center = CGPointMake(hCenter+offCenter, 185);
 
     } else {
         
@@ -97,10 +144,15 @@
         self.blueSlider.frame = CGRectMake(self.blueSlider.frame.origin.x, self.blueSlider.frame.origin.y,100,30);
         self.alphaSlider.frame = CGRectMake(self.alphaSlider.frame.origin.x, self.alphaSlider.frame.origin.y,100,30);
         
-        self.redSlider.center = CGPointMake(hCenter-100, 75);
-        self.greenSlider.center = CGPointMake(hCenter+100, 75);
-        self.blueSlider.center = CGPointMake(hCenter-100, 225);
-        self.alphaSlider.center = CGPointMake(hCenter+100, 225);
+        self.redSlider.center = CGPointMake(hCenter-offCenter, 75);
+        self.greenSlider.center = CGPointMake(hCenter+offCenter, 75);
+        self.blueSlider.center = CGPointMake(hCenter-offCenter, 225);
+        self.alphaSlider.center = CGPointMake(hCenter+offCenter, 225);
+        
+        self.redLabel.center = CGPointMake(hCenter-offCenter, 35);
+        self.greenLabel.center = CGPointMake(hCenter+offCenter, 35);
+        self.blueLabel.center = CGPointMake(hCenter-offCenter, 185);
+        self.alphaLabel.center = CGPointMake(hCenter+offCenter, 185);
         
     }
     
@@ -140,6 +192,21 @@
 	[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithFloat:blueSlider.value] forKey:@"blueBGColor"];
 	[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithFloat:alphaSlider.value] forKey:@"alphaBGColor"];
 	[[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+-(void) dealloc {
+    
+    [redSlider release];
+    [greenSlider release];
+    [blueSlider release];
+    [alphaSlider release];
+    [redLabel release];
+    [greenLabel release];
+    [blueLabel release];
+    [alphaLabel release];
+
+    [super dealloc];
+
 }
 
 @end

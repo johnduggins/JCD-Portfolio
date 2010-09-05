@@ -16,6 +16,11 @@
 	UISlider *blueSlider;
 	UISlider *greenSlider;
 	UISlider *alphaSlider;
+    
+    UIButton *redLabel;
+    UIButton *greenLabel;
+    UIButton *blueLabel;
+    UIButton *alphaLabel;
 
 }
 
@@ -23,6 +28,10 @@
 @property (nonatomic, retain) UISlider *blueSlider;
 @property (nonatomic, retain) UISlider *greenSlider;
 @property (nonatomic, retain) UISlider *alphaSlider;
+@property (nonatomic, retain) UIButton *redLabel;
+@property (nonatomic, retain) UIButton *greenLabel;
+@property (nonatomic, retain) UIButton *blueLabel;
+@property (nonatomic, retain) UIButton *alphaLabel;
 
 -(void)updateBackground;
 -(void)layoutControllers;
