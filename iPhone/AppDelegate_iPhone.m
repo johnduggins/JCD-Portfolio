@@ -34,18 +34,24 @@
     [navGPS.tabBarItem initWithTitle:@"GPS" image:[[UIImage alloc] initWithContentsOfFile:path] tag:0];
 	
 	PrimaryViewController *myThirdViewController = [[PrimaryViewController alloc] init];
-	myThirdViewController.title = @"Three";
-	path = [[NSBundle mainBundle] pathForResource:myThirdViewController.title ofType:@"png"];
-	[myThirdViewController.tabBarItem initWithTitle:myThirdViewController.title
+	myThirdViewController.title = @"Session Manager";
+    UINavigationController *navSessions = [[UINavigationController alloc] initWithRootViewController:myThirdViewController];
+    navSessions.navigationBar.barStyle = UIBarStyleBlack;
+	path = [[NSBundle mainBundle] pathForResource:@"Three" ofType:@"png"];
+	[navSessions.tabBarItem initWithTitle:@"Sessions"
 											  image:[[UIImage alloc] initWithContentsOfFile:path] tag:0];
+    UITableViewController *sessionViewController = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
+    [navSessions pushViewController:sessionViewController animated:TRUE];
 	
-	NSArray *tbarArray = [NSArray arrayWithObjects:navColorPicker, navGPS, myThirdViewController, nil];
+	NSArray *tbarArray = [NSArray arrayWithObjects:navColorPicker, navGPS, navSessions, nil];
     
     [myFirstViewController release];
 	[mySecondViewController release];
     [myThirdViewController release];
 	[navColorPicker release];
     [navGPS release];
+    [navSessions release];
+    [sessionViewController release];
 	
 	UITabBarController *tbarController = [[UITabBarController alloc] init];
 	tbarController.viewControllers = tbarArray;
